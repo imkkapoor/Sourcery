@@ -4,7 +4,6 @@ import Announcement from "../componenets/announcement-top/Announcement";
 import Footer from "../componenets/footer/Footer";
 import NavigationBar from "../componenets/nav-bar/NavigationBar";
 import BestSellers from "../componenets/best-sellers/BestSellers";
-
 import TrustStatement from "../componenets/trust-statement/TrustStatement";
 import { useSelector } from "react-redux";
 import StripeCheckout from "react-stripe-checkout";
