@@ -1,0 +1,45 @@
+.best-seller-head-container p {
+    font-family: ProximaNova,sans-serif;
+    color: black;
+    font-size: 4vh;
+    letter-spacing: 0;
+    padding: 1vh;
+    padding-bottom: 0;
+    margin-top: 2vh;
+    padding-left: 3vw;
+    background-color: white;
+    line-height: 1.35;
+    font-weight: 500;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+   
+}
+
+.best-seller-head-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+}
+
+
+.best-seller-head-container h6{
+    padding-right: 3vw;
+    font-size: 2vh;
+    color: rgb(109, 109, 109);
+    background-color: white;
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+.best-seller-container{
+    
+    padding: 1vw;
+    padding-top: 0vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: white;
+}

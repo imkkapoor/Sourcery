@@ -1,0 +1,25 @@
+import React from "react";
+import BestSellerItem from "./BestSellerItem";
+import "./BestSeller.css";
+
+export default function BestSellers({itemList, infoObject}) {
+  return (
+    <>
+      <div className="best-seller-head-container"> 
+      {/* <p>Best Sellers</p>
+      <h6>EXPLORE ALL BEST SELLERS</h6> */}
+      <p>{infoObject.header}</p>
+      <h6>{infoObject.link}</h6>
+      </div>
+      <div className="best-seller-container">
+        {itemList.map((item) => (
+          <BestSellerItem item={item} key={item.id} />
+        ))}
+      </div>
+    </>
+  );
+}
+
+
+
+

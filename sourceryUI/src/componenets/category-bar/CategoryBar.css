@@ -1,0 +1,38 @@
+
+.category-bar-container {
+   
+    background-color: black;
+    
+    padding: 0.9vh;
+    
+}
+
+.category-bar-container ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+  
+}
+
+.category-bar-container li button {
+    border: none;
+    background-color: black;
+    color: rgb(184, 184, 184);
+    position: sticky;
+    top: 0;
+    font-size: 2vh;
+
+}
+
+.category-bar-container li {
+    background-color: black;
+    position: sticky;
+    top: 0;
+  
+}

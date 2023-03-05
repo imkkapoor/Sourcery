@@ -1,0 +1,17 @@
+.trust-statement-container{
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.trust-statement-container p{
+    padding: 7px 20px;
+    color: rgb(83, 83, 83);
+}
+
+.trust-statement-container h2{
+    color: black;
+    font-size: 3vh;
+}

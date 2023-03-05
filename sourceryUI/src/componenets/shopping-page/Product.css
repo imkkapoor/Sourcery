@@ -1,0 +1,9 @@
+.product-container{   
+    padding: 1vw;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #1a1a1b;
+    width: 100%;
+}

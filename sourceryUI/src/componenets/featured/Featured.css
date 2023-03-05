@@ -1,0 +1,56 @@
+
+
+.container-featured-products{
+    padding: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    position:relative;
+    height: 95vh;
+    
+}
+
+
+.featured-poster{
+    height: 27vw;
+    object-fit: cover;
+}
+
+.featured-text{
+    background-color: rgb(255, 255, 255);
+    width: 30vw;
+    top:28vw;
+    padding: 2vh;
+    padding-left: 3vh;
+    padding-top: 3vh;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    
+}
+
+.featured-text h2{
+    color: black;
+    
+}
+
+#first-product{
+    position: absolute;
+    left: 13.6vw;
+    
+
+}
+#second-product{
+    position: absolute;
+    left: 55.8vw;
+    
+}
+
+.featured-text button{
+    border: none;
+    border-radius: 2px;
+    color: white;
+    background-color: #282829;
+    display: block;
+    margin: 1vh;
+    padding: 1vh;
+}

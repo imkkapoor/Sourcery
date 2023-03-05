@@ -1,0 +1,32 @@
+.newsletter-container{
+    text-align: center;
+    color: white;
+    padding: 4vh;
+}
+
+.newsletter-container h1{
+    font-size: 5vh;
+}
+
+.newsletter-container input, input:focus{
+    padding: 0.5vw;
+    border: none;
+    background-color: white;
+    outline: none;
+    
+    
+}
+
+.newsletter-container button{
+    padding: 0.5vw;
+    background-color: white;
+    margin-left: -4px;
+    border: none;
+    line-height: 3.7vh;
+}
+
+.newsletter-container input{
+    line-height: 3.7vh;
+    min-width: 20vw;
+}
+

@@ -1,0 +1,10 @@
+.announcement{
+    display: block;
+    height: 6vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 1.4vh;
+    font-size: 2vh;
+    font-weight: bold;
+}

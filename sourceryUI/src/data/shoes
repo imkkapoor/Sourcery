@@ -1,0 +1,366 @@
+[
+    {
+        "_id": "63fe972b6d24855ac9b67dec",
+        "company": "Jordan",
+        "title": "Air Jordan 1 Low",
+        "variant": "\"Travis Scott X Fragment\"",
+        "image": "https://drive.google.com/uc?export=view&id=16Gt5gF4rZXvc5RdxE4NziLvlpPbKw57Q",
+        "categories": [
+            "women","men",
+            "best-seller"
+        ],
+        "size": [
+            "6",
+            "8",
+            "9"
+        ],
+        "color": [
+            "brown",
+            "white",
+            "all"
+        ],
+        "price": 1180,
+        "type": "shoes"
+    },
+    {
+        "_id": "63fe97c06d24855ac9b67dee",
+        "company": "Jordan",
+        "title": "Air Jordan 1 Low",
+        "variant": "\"Travis Scott X Fragment\"",
+        "image": "https://drive.google.com/uc?export=view&id=1lsfUDgTHb7pP02fu1SefIBjA9q7tcAyJ",
+        "categories": [
+            "men",
+            "best-seller"
+        ],
+        "size": [
+            "7",
+            "8",
+            "9"
+        ],
+        "color": [
+            "brown",
+            "white",
+            "all"
+        ],
+        "price": 2480,
+        "inStock": true,
+        "createdAt": "2023-03-01T00:09:36.468Z",
+        "updatedAt": "2023-03-01T00:09:36.468Z",
+        "__v": 0,
+        "type": "shoes"
+    },
+    {
+        "_id": "63fe981c6d24855ac9b67df2",
+        "company": "Nike",
+        "title": "Air Max 270 React",
+        "variant": "\"Travis Scott - Cactus Trails\"",
+        "image": "https://drive.google.com/uc?export=view&id=1Cvf1p3xHNaYyZl7_sBqR7gsk6_GNpie7",
+        "categories": [
+            "men"
+        ],
+        "size": [
+            "7",
+            "8",
+            "10"
+        ],
+        "color": [
+            "white",
+            "cream",
+            "brown",
+            "all"
+        ],
+        "price": 800,
+        "type": "shoes"
+    },
+    {
+        "_id": "63fe98266d24855ac9b67df4",
+        "company": "Nike",
+        "title": "Dunk  Low",
+        "variant": "\"Off-white - Lot 38\"",
+        "image": "https://drive.google.com/uc?export=view&id=1hxFeXUS_X0sSurJyi4EHU2ylOeHF05W3",
+        "categories": [
+            "men"
+        ],
+        "size": [
+            "6",
+            "7",
+            "9"
+        ],
+        "color": [
+            "white",
+            "all"
+        ],
+        "price": 700,
+        "type": "shoes"
+    },
+    {
+        "_id": "63fe982d6d24855ac9b67df6",
+        "company": "Adidas",
+        "title": "Yeezy Quantum",
+        "variant": "\"Mono - Carbon\"",
+        "image": "https://drive.google.com/uc?export=view&id=1XrhL1A_yy_uj4mGAIenEmjzxZJ3ojBOQ",
+        "categories": [
+            "men"
+        ],
+        "size": [
+            "7",
+            "9",
+            "10"
+        ],
+        "color": [
+            "black",
+            "gray",
+            "cream",
+            "all"
+        ],
+        "price": 250,
+        "type": "shoes"
+    },
+    {
+        "_id": "63fe984b6d24855ac9b67df8",
+        "company": "Adidas Yezzy",
+        "title": "Yezzy Slide ",
+        "variant": "\"Pure - 2021\"",
+        "image": "https://drive.google.com/uc?export=view&id=1JPjyI76MdRkFRoaeGTOmtqMtN9mXmfTt",
+        "categories": [
+            "women","men"
+        ],
+        "size": [
+            "7",
+            "8",
+            "9"
+        ],
+        "color": [
+            "cream",
+            "white",
+            "all"
+        ],
+        "price": 300,
+        "type": "shoes"
+    },
+    {
+        "_id": "63fe98536d24855ac9b67dfa",
+        "company": "New Balance",
+        "title": "990V3 Teddy ",
+        "variant": "\"Santis - Khaki\"",
+        "image": "https://drive.google.com/uc?export=view&id=1IdmfaMl1swFCqxMiiKwYhorjbYaHreIk",
+        "categories": [
+            "men"
+        ],
+        "size": [
+            "7",
+            "8",
+            "9"
+        ],
+        "color": [
+            "multi-color",
+            "brown",
+            "all"
+        ],
+        "price": 400,
+        "type": "shoes"
+    },
+    {
+        "_id": "63fe985b6d24855ac9b67dfc",
+        "company": "Adidas",
+        "title": "Yeezy Basketball Knit",
+        "variant": "\"Slate - blue\"",
+        "image": "https://drive.google.com/uc?export=view&id=1wLQzsmWja7t15WKXxfpvZSzAmtqlU5pT",
+        "categories": [
+            "men"
+        ],
+        "size": [
+            "7",
+            "8",
+            "11"
+        ],
+        "color": [
+            "gray",
+            "all"
+        ],
+        "price": 285,
+        "type": "shoes"
+    },
+    {
+        "_id": "63fe987a6d24855ac9b67dfe",
+        "company": "Jordan",
+        "title": "Air Jordan 1 Low",
+        "variant": "\"Wolf - Grey\"",
+        "image": "https://drive.google.com/uc?export=view&id=1NfaE_lTWRM_h--qEGeNIwi14mjqPNCRi",
+        "categories": [
+            "women","men"
+        ],
+        "size": [
+            "7",
+            "8",
+            "9"
+        ],
+        "color": [
+            "cream",
+            "white",
+            "all"
+        ],
+        "price": 290,
+        "type": "shoes"
+    },
+    {
+        "_id": "63fe98846d24855ac9b67e00",
+        "company": "New Balance",
+        "title": "610V1",
+        "variant": "\"Cloud white\"",
+        "image": "https://drive.google.com/uc?export=view&id=1Pf0meuBy70M-Q5NNb-26w3ZAd74m5e17",
+        "categories": [
+            "men","women"        ],
+        "size": [
+            "6",
+            "8",
+            "9"
+        ],
+        "color": [
+            "white",
+            "gray",
+            "all"
+        ],
+        "price": 270,
+        "type": "shoes"
+    },
+    {
+        "_id": "63fe98906d24855ac9b67e02",
+        "company": "Jordan",
+        "title": "Air Jordan 1 High OG ",
+        "variant": "\"Travis Scott X Fragment\"",
+        "image": "https://drive.google.com/uc?export=view&id=1ck3BTrL0VOXHTl544XTchRhteYUMk7kI",
+        "categories": [
+            "men"
+        ],
+        "size": [
+            "5",
+            "7",
+            "9"
+        ],
+        "color": [
+            "brown",
+            "black",
+            "all"
+        ],
+        "price": 2104,
+        "type": "shoes"
+    },
+    {
+        "_id": "63fe98976d24855ac9b67e04",
+        "company": "Adidas",
+        "title": "Forum Low",
+        "variant": "\"Bad Bunny - Easter Egg\"",
+        "image": "https://drive.google.com/uc?export=view&id=18uorSBQ2Sl94rwOBTqNAURwoMpE9WPQr",
+        "categories": [
+            "men"
+        ],
+        "size": [
+            "6",
+            "7",
+            "9"
+        ],
+        "color": [
+            "orange",
+            "white",
+            "all"
+        ],
+        "price": 360,
+        "type": "shoes"
+    },
+    {
+        "_id": "63fe98a06d24855ac9b67e06",
+        "company": "Jordan",
+        "title": "Air Jordan 11 Retro ",
+        "variant": "\"Cool - Grey\"",
+        "image": "https://drive.google.com/uc?export=view&id=11IlHzjkqbE4_WhFZ7u2n-oxTXKUrAPOJ",
+        "categories": [
+            "men",
+            "women",
+            "best-seller"
+        ],
+        "size": [
+            "8",
+            "9",
+            "10",
+            "11"
+        ],
+        "color": [
+            "gray",
+            "white",
+            "all"
+        ],
+        "price": 376,
+        "type": "shoes"
+    },
+    {
+        "_id": "63fe98a86d24855ac9b67e08",
+        "company": "Jordan",
+        "title": "Air Jordan 1 Mids ",
+        "variant": "\"Grey - Fog\"",
+        "image": "https://drive.google.com/uc?export=view&id=1nQX0YgMxbgWdsvj8Mfyaw0CW-2icywVF",
+        "categories": [
+            "men",
+            "best-seller"
+        ],
+        "size": [
+            "7",
+            "8",
+            "9"
+        ],
+        "color": [
+            "gray",
+            "white",
+            "all"
+        ],
+        "price": 489,
+        "type": "shoes"
+    },
+    {
+        "_id": "63fe98ae6d24855ac9b67e0a",
+        "company": "New Balance",
+        "title": "2002R Protection Pack",
+        "variant": "\"Rain Cloud\"",
+        "image": "https://drive.google.com/uc?export=view&id=1Cqn70_3nr_aLVUCPz5yn58k5X16Rpc1G",
+        "categories": [
+            "men",
+            "women",
+            "best-seller"
+        ],
+        "size": [
+            "7",
+            "8",
+            "9"
+        ],
+        "color": [
+            "gray",
+            "all"
+        ],
+        "price": 532,
+        "type": "shoes"
+    },
+    {
+        "_id": "63fe98c76d24855ac9b67e0e",
+        "company": "Adidas",
+        "title": "Samba - Vegan",
+        "variant": "\"white - Gum OG\"",
+        "image": "https://drive.google.com/uc?export=view&id=17T6_qmbF5WMOaZOw9hLvQ0W4lwGdSPyh",
+        "categories": [
+            "men",
+            "best-seller",
+            "women"
+        ],
+        "size": [
+            "8",
+            "9",
+            "10"
+        ],
+        "color": [
+            "brown",
+            "white",
+            "all"
+        ],
+        "price": 128,
+        "type": "shoes"
+    }
+]

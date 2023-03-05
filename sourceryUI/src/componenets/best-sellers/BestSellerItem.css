@@ -1,0 +1,52 @@
+.best-seller-item-container{
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 1vw;
+    margin-top: 2vh;
+    margin-bottom: 2vw;
+    padding: 1vw;
+    padding-left: 0;
+    padding-right: 0;
+    cursor: pointer;
+    position: relative;
+    transition: all 1s ease;
+}
+
+.best-seller-item-container img {
+    height: 17.5vh;
+    border-radius: 4px;
+}
+
+.best-seller-item-container p{
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.4vh;
+    color: black;
+    margin-bottom: 0;
+    padding: 0px 4px;
+
+}
+
+#Favorite-Border-Icon{
+    position: absolute;
+    top: 0.9vh;
+    right: 0.9vh;
+
+}
+
+.best-seller-item-container h5{
+    text-align: center;
+    font-size: 1.7vh;
+    color: rgb(105, 105, 105);
+}
+
+
+
+.best-seller-item-container .variant{
+    color: rgb(59, 59, 59);
+    font-weight: normal;
+    margin-bottom: 1vh;
+    font-size: 2.1vh;
+
+}

@@ -1,0 +1,73 @@
+*{
+    font-family: Roboto;
+}
+
+.card-travis #slider{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.front-view{
+    height: 78vh;
+    background-color: black;
+    
+    
+    
+}
+
+.card-travis{
+    display: flex;
+    background-color: #e2e1e6;
+    height: 83vh;
+    position: relative;
+    
+}
+
+.frontview-text{
+    border-radius: 3px;
+    padding: 2.2vw;
+    background-color: rgba(0,0,0,0.70);
+    /* background-color: rgb(255, 255, 255,0.83); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    color: #c7c7c7;
+    /* color: black; */
+    margin: 0vw;
+    font-size: 2.22vh;
+    position: absolute;
+    bottom:10vh;
+    right: 3vw;
+    left: 66vw;
+    top:auto;
+}
+
+h3{
+    color: #045daf;
+    margin-bottom: 2vh;
+    font-size: 2.2vh;
+    font-weight: 600;
+    margin-top: 2vh;
+}
+h2{
+    font-weight: bold;
+    color: white;
+    /* color: black; */
+    font-size: 3.2vh;
+}
+
+.steal-shop-now{
+    margin-top: 2vh;
+    padding: 7px;
+    border-radius: 1.5px;
+    background-color: whitesmoke;
+    color: black;
+    /* background-color: black;
+    color: azure; */
+    font-weight: bold ;
+    /* padding-bottom: 3px; */
+    text-align: center;
+    border: none;
+    font-size: 2.4vh;
+    margin-top: 3vh;
+}

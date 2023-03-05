@@ -1,0 +1,132 @@
+[
+    {
+        "_id": "64043fb228dde51978ae1dd8",
+        "company": "Travis Scott",
+        "title": "Cactus Jack Crewneck",
+        "variant": "",
+        "image": "https://drive.google.com/uc?export=view&id=1zSAqOE-vmDgXjnyUgM5XwjGPxBi_ReLD",
+        "categories": [
+            "men",
+            "women",
+            "best-seller"
+        ],
+        "size": [
+            "M"
+        ],
+        "color": [
+            "red",
+            "gray"
+        ],
+        "price": 79,
+        "type": "apparel"
+    },
+    {
+        "_id": "6404403528dde51978ae1dda",
+        "company": "Supreme",
+        "title": "Supreme X Champion ",
+        "variant": "\"Chrom SS 19 Top\"",
+        "image": "https://drive.google.com/uc?export=view&id=1EH4_aBhpxBnIhyooTb0uTDBOrdae_ykQ",
+        "categories": [
+            "men",
+            "best-seller"
+        ],
+        "size": [
+            "M",
+            "L"
+        ],
+        "color": [
+            "black"
+        ],
+        "price": 127,
+        "type": "apparel"
+    },
+    {
+        "_id": "640440af28dde51978ae1ddc",
+        "company": "The North Face",
+        "title": "1996 Retro Nuptse",
+        "variant": "",
+        "image": "https://drive.google.com/uc?export=view&id=1BQuZQZGqXIyLP0MsLB52oYCYnlmYP0o9",
+        "categories": [
+            "men",
+            "women",
+            "best-seller"
+        ],
+        "size": [
+            "S",
+            "M"
+        ],
+        "color": [
+            "black"
+        ],
+        "price": 490,
+        "type": "apparel"
+    },
+    {
+        "_id": "6404411328dde51978ae1dde",
+        "company": "A Bathing Ape",
+        "title": "BAPE X ASSC",
+        "variant": "\"Cammo Box Tee\"",
+        "image": "https://drive.google.com/uc?export=view&id=1lyp-PTBS3dG_IVEGtujXGk5z1LkoAcT0",
+        "categories": [
+            "men",
+            "best-seller"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L"
+        ],
+        "color": [
+            "black"
+        ],
+        "price": 70,
+        "type": "apparel"
+    },
+    {
+        "_id": "640441a228dde51978ae1de0",
+        "company": "Supreme",
+        "title": "TNF Mountain Parka",
+        "variant": "\"Metallic SS 18\"",
+        "image": "https://drive.google.com/uc?export=view&id=17ztqELypo8-clNctO2op7P7_11x9SeJg",
+        "categories": [
+            "men",
+            "women",
+            "best-seller"
+        ],
+        "size": [
+            "S",
+            "M"
+        ],
+        "color": [
+            "silver",
+            "mettalic",
+            "black"
+        ],
+        "price": 1790,
+        "type": "apparel"
+    },
+    {
+        "_id": "6404422828dde51978ae1de4",
+        "company": "Supreme",
+        "title": "TNF Baltoro",
+        "variant": "\"FW 19 Statue of Liberty\"",
+        "image": "https://drive.google.com/uc?export=view&id=1bz3Zcd2isyTNofc3jk86B-LD2mhEk3Jv",
+        "categories": [
+            "men",
+            "women",
+            "best-seller"
+        ],
+        "size": [
+            "S",
+            "L",
+            "XL"
+        ],
+        "color": [
+            "gray",
+            "black",
+            "blue"
+        ],
+        "price": 1400,
+        "type": "apparel"
+    }
+]

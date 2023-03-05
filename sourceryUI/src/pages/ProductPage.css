@@ -1,0 +1,130 @@
+.sort-filter-category-header{
+    display: flex;
+    align-items: center;
+    padding: 7px 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+    
+}
+
+.sort-filter-category-header .left{
+    flex: 1;
+    margin:0px 30px;
+    
+}
+
+.sort-filter-category-header .left Button{
+    
+    background-color: black;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+.sort-filter-category-header .left Button:focus,.sort-filter-category-header .left Button:hover,.sort-filter-category-header .left Button:active{
+    outline: none;
+    background-color: black;
+}
+
+.sort-filter-category-header .center{
+    flex: 2;
+    font-family: ProximaNova,sans-serif;
+    font-size:16px;
+    font-weight: normal;
+    margin-top: 0;
+}
+.sort-filter-category-header .right{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 30px;
+    position: relative;
+    color: white;
+    font-size:16px;
+}
+.sort-filter-category-header .right h6{
+    position: absolute;
+    top: -0.7vh;
+    margin-left: 10px;
+    font-size:9px;
+}
+
+.sort-filter-category-header .right select{
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+    font-size:16px;
+    padding-top: 10px;
+    width: 19vw;
+    padding-left: 7px;
+    
+}
+.sort-filter-category-header .right select:focus{
+    background-color: black;
+    border: none;
+    outline: none;
+}
+
+.sort-filter-category-header .right option{
+    font-size: 16px;
+    
+}
+
+.filter-menu-and-products-container{
+    display: flex;
+    background-color: #fff;
+    padding:  10px 0px;
+    background-color: #1a1a1b;
+}
+
+.filter-container{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px;
+}
+.filter-menu-and-products-container .filter-container{
+   background-color: white;
+    padding: 0;
+    height: 100%;
+}
+
+
+.filter-menu-and-products-container .filter-container ul{
+    list-style: none;
+    
+    padding: 0;
+    margin: 0;
+}
+
+.filter-menu-and-products-container .filter-container ul li button{
+    border: none;
+    width: 100%;
+    padding: 3px;
+}
+
+.filter-menu-and-products-container .filter-container ul li{
+    padding: 2px;
+}
+
+
+.filter-menu-and-products-container .filter-container ul li button:hover{
+    background-color: rgb(162, 162, 162);
+}
+
+.filter-menu-and-products-container .filter-container .card{
+    border-radius: 0;
+    border: none;
+}
+
+.filter-menu-and-products-container .filter-container .card .accordion-button, .filter-menu-and-products-container .filter-container .card .accordion-button:focus
+,.filter-menu-and-products-container .filter-container .card .accordion-button::after{
+    background-color: white;
+    outline: none;
+    color: #212529;
+
+
+}
