@@ -8,18 +8,27 @@ import Newsletter from "../componenets/news-letter/Newsletter";
 import Footer from "../componenets/footer/Footer";
 import CategoryBar from "../componenets/category-bar/CategoryBar";
 
-
-
 export default function Home() {
     return (
         <>
             <Announcement />
             <NavigationBar />
-            <CategoryBar/>
+            <CategoryBar />
             <FrontView />
             <Featured />
-            <BestSellers cat="shoes" type={{categories:"best-seller"}}  infoObject = {{header:"Best Sellers",link:"EXPLORE ALL BEST SELLERS"}}/>
-            <BestSellers cat="apparel" type={{categories:"best-seller"}}  infoObject = {{header:"Apparel",link:"SHOP ALL THE APPAREL"}}/>
+            <BestSellers
+                cat="shoes"
+                type={{ categories: "best-seller" }}
+                infoObject={{
+                    header: "Best Sellers",
+                    link: "EXPLORE ALL BEST SELLERS",
+                }}
+            />
+            <BestSellers
+                cat="apparel"
+                type={{ categories: "best-seller" }}
+                infoObject={{ header: "Apparel", link: "SHOP ALL THE APPAREL" }}
+            />
             <Newsletter />
             <Footer />
         </>

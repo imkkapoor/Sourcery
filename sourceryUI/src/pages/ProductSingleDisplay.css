@@ -6,6 +6,7 @@
 .single-product-container .left{
     flex: 1.7;
     width: 100%;
+    margin: 20px 0px;
     
 }
 .single-product-container .left img{

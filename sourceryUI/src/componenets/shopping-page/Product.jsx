@@ -3,7 +3,7 @@ import ProductEach from "./ProductEach";
 import "./Product.css";
 import axios from "axios";
 
-export default function Product({cat, filters, sort }) {
+export default function Product({query, filters, sort }) {
     const [products, setProducts] = useState([]);
     const [filteredProducts, setFilteredProducts] = useState([]);
 
@@ -11,19 +11,19 @@ export default function Product({cat, filters, sort }) {
         const getProducts = async () => {
             try {
                 const res = await axios.get(
-                    cat
-                        ? `http://localhost:5000/api/products?category=${cat}`
-                        : "http://localhost:5000/api/products"
+                    
+                        `http://localhost:5000/api/products?${query}`
+                       
                 );
                 setProducts(res.data);
             } catch (err) {}
         };
         getProducts();
-    }, [cat]);
+    }, [query]);
 
 
     useEffect(() => {
-        cat &&
+        query &&
             setFilteredProducts(
                 products.filter((item) =>
                     Object.entries(filters).every(([key, value]) =>
@@ -31,7 +31,7 @@ export default function Product({cat, filters, sort }) {
                     )
                 )
             );
-    }, [products, cat, filters]);
+    }, [products, query, filters]);
 
     useEffect(() => {
         if ((sort === "best-seller")) {

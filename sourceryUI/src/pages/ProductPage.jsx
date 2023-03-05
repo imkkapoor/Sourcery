@@ -17,11 +17,11 @@ import { useLocation } from "react-router-dom";
 
 export default function ProductPage() {
     const location = useLocation();
-    const cat = location.pathname.split("/")[2];
+    const query = location.pathname.split("/")[2];
     const [open, setOpen] = useState(false);
     const [filter, setFilter] = useState({});
     const [sort, setSort] = useState("newest");
-
+    console.log(query)
     const handleFilters = (e) => {
         const value = e.target.innerHTML;
     
@@ -247,7 +247,7 @@ export default function ProductPage() {
                 </div>
 
                 <Product
-                    cat={cat}
+                    query={query}
                     filters={filter}
                     sort={sort}
                 />

@@ -74,14 +74,6 @@ router.get("/", async (req, res) => {
             products= await Product.find().sort({createdAt:-1}).limit(6)
 
         }
-        else if(qCompany && qCategory){
-            products = await Product.find({company:{
-                $in:[qCompany]
-            },
-            categories:{
-                $in:[qCategory]
-            }
-        })}
         else if(qCategory){
             products = await Product.find({categories:{
                 $in:[qCategory]

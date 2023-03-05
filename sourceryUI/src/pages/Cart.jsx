@@ -4,7 +4,7 @@ import Announcement from "../componenets/announcement-top/Announcement";
 import Footer from "../componenets/footer/Footer";
 import NavigationBar from "../componenets/nav-bar/NavigationBar";
 import BestSellers from "../componenets/best-sellers/BestSellers";
-import { bestSellers } from "../data/sneaker-best-sellers";
+
 import TrustStatement from "../componenets/trust-statement/TrustStatement";
 import { useSelector } from "react-redux";
 import StripeCheckout from "react-stripe-checkout";
@@ -27,7 +27,7 @@ export default function Cart() {
                     tokenId: stripeToken.id,
                     amount: (cart.total + 25) * 100,
                 });
-                
+
                 navigate("/success", {
                     stripeData: res.data,
                     products: cart,
@@ -98,7 +98,8 @@ export default function Cart() {
             </div>
             <TrustStatement />
             <BestSellers
-                itemList={bestSellers}
+                cat="shoes"
+                type={{ categories: "best-seller" }}
                 infoObject={{
                     header: "Best Sellers",
                     link: "EXPLORE ALL BEST SELLERS",

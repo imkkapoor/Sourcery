@@ -40,7 +40,7 @@ export default function ProductSingleDisplay() {
                     <h4>{product.company}</h4>
                     <h1>{product.title}</h1>
                     <h2>{product.variant}</h2>
-                    <h2 id="price">{product.price}</h2>
+                    <h2 id="price">${product.price}</h2>
                     <div className="size-select">
                         US Men's sizes displayed<br></br>
                         <div>
