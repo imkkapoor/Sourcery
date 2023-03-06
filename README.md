@@ -1,4 +1,4 @@
-A full-stack E-commerce website built on MERN stack and uses a variety of libraries such as Bootstrap, styled-components and MUI. Furthermore uses Redux for state management.
+A full-stack E-commerce website built on MERN stack and uses a variety of libraries such as bootstrap, axios, styled-components and MUI. Furthermore uses Redux for state management.
 
 
 •The frontend includes a user-friendly interface that allows customers to browse products, add them to their cart, and checkout. 
