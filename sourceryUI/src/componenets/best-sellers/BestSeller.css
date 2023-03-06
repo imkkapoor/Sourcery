@@ -1,3 +1,5 @@
+
+
 .best-seller-head-container p {
     font-family: ProximaNova,sans-serif;
     color: black;
@@ -42,4 +44,24 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: white;
+}
+
+
+@media only screen and (max-width: 549px){
+    .best-seller-head-container p{
+        display: flex;
+        font-size: 25px;
+        align-items: center;
+        margin-top: 0;
+        padding: 20px;
+    }
+    .best-seller-head-container h6{
+        font-size: 10px;
+        margin-top: 0;
+    }
+    .best-seller-head-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 }

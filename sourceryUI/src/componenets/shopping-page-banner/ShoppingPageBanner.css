@@ -41,3 +41,33 @@
     font-size: 2.22vh;
 
 }
+
+
+@media only screen and (max-width: 549px) {
+    .shopping-page-banner-container .info h3{
+        font-size: 10px;
+    }
+    .shopping-page-banner-container .info h6{
+        font-size: 16px;
+    }
+    .shopping-page-banner-container .info p{
+        font-size: 10px;
+    }
+    .shopping-page-banner-container .info{
+        width: 90%;
+        
+        padding-top: 10px;
+        height: auto;
+        padding-bottom: 0;
+        top: 16vh;
+        left: 4.6vw;
+
+    }
+    .shopping-page-banner-container img{
+        width: 100%;
+    } 
+    .shopping-page-banner-container{
+        margin: 30px;
+        margin-bottom: 110px;
+    }
+}

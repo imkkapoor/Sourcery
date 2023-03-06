@@ -71,20 +71,24 @@
         padding: 40px;
         padding-top: 0px;
         justify-content: space-around;
+        
     }
     #first-product, #second-product{
-        left: 50px;
-        right: 50px;
+        left: 12.5vw;
+      
     }
     .featured-poster{
         height: 25vh; 
     }
     #first-product{
-        top: 32vh;
+        top: 31vh;
+       
         width: 75vw;
+        
+
     }
     #second-product{
-        top: 77.5vh;
+        top: 76.7vh;
         width: 75vw;
     }
     .featured-text button{
@@ -96,7 +100,8 @@
         padding-bottom: 10px;
     }
 
-   #banner-1, #banner-2{
+
+   /* #banner-1, #banner-2{
     position: absolute;
     height: 28.3vh;
 
@@ -107,6 +112,13 @@
    }
    #banner-2{
     top: 53vh;
-   }
+   } */
 
+   #banner-2{
+    margin-bottom: 7vh;
+   }
+   #banner-1{
+    margin-top: -2vh;
+   }
+ 
 }
