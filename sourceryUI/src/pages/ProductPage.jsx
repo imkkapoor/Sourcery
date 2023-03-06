@@ -5,7 +5,6 @@ import Footer from "../componenets/footer/Footer";
 import NavigationBar from "../componenets/nav-bar/NavigationBar";
 import Newsletter from "../componenets/news-letter/Newsletter";
 import Product from "../componenets/shopping-page/Product";
-import { sneaker_all } from "../data/sneaker-all";
 import "./ProductPage.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
