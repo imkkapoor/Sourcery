@@ -15,7 +15,7 @@ export default function BestSellers({cat, type, infoObject}) {
     const getProducts = async () => {
         try {
             const res = await axios.get(
-              `http://localhost:5000/api/products?type=${cat}`
+              `https://sourceryapi.onrender.com/api/products?type=${cat}`
                    
             );
             setProducts(res.data);
