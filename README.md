@@ -3,7 +3,7 @@ A full-stack E-commerce website built on MERN stack and uses a variety of librar
 
 •The frontend includes a user-friendly interface that allows customers to browse products, add them to their cart, and checkout. 
 
-•The backend includes an API that manages the server and processes requests. It handles user authentication and authorization using JWT, manages the shopping cart and checkout process, and communicates with external services such as payment gateways.
+•Created an API with all CRUD operations which manage the server and process requests. It handles user authentication and authorization using JWT, manages the shopping cart and checkout process, and communicates with external services such as payment gateways.
 
 •The database stores all the information about products, orders, and customers.
 
