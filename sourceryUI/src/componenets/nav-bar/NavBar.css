@@ -90,6 +90,7 @@ img{
     /* margin-top: 6px; */
 }
 
-#shopping-bag{
+#shopping-bag,#login-account{
     padding: 0.5rem;
 }
+

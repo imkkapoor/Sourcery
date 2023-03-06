@@ -56,9 +56,9 @@ export default function NavigationBar() {
                             <p>|</p>
                         </Nav.Link>
 
-                        <Nav.Link className="right-contents" href="#account-me">
+                        <Link to="/login" className="right-contents" id="login-account">
                             <PersonOutlineOutlined />
-                        </Nav.Link>
+                        </Link>
                         <Nav.Link className="right-contents" href="#favourites">
                             <FavoriteBorder />
                         </Nav.Link>
