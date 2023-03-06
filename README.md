@@ -9,7 +9,3 @@ A full-stack E-commerce website built on MERN stack and uses a variety of librar
 
 
 I'm just lacking a bit of middleware to work on. I am currently working on developing an admin pannel to ease the admin's/owner's daily tasks and to make the UI more interesting.
-
-Here's a link to the live website.
-
-https://sourcery604.netlify.app/
