@@ -1,3 +1,13 @@
+@media only screen and (max-width: 549px) {
+  .footer-container{
+    flex-direction: column;
+  }
+  .footer-container .right,.footer-container .center,.footer-container .left{
+    display: block;
+    padding: 10px;
+  }
+}
+
 .footer-container {
   display: flex;
   justify-content:flex-start;

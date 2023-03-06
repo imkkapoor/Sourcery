@@ -5,6 +5,6 @@ export const categories = [
     { id: 4, title: "JORDAN", query: "company=Jordan" },
     { id: 5, title: "YEEZY", query: "company=Adidas" },
     { id: 7, title: "WOMEN", query: "category=women" },
-    { id: 7, title: "APPAREL", query: "type=apparel" },
-    { id: 8, title: "ACCESSORIES", query: "type=accessories" },
+    { id: 8, title: "APPAREL", query: "type=apparel" },
+    { id: 9, title: "ACCESSORIES", query: "type=accessories" },
 ];

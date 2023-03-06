@@ -74,16 +74,16 @@ export default function Cart() {
                         <div className="right">
                             {cart.total} <br></br>
                             {cart.total === 0? 0:25}<br></br>
-                            <b>{cart.total === 0? 0: cart.total += 25}</b>
+                            <b>{cart.total === 0? 0: cart.total + 25}</b>
                         </div>
                     </div>
                     <StripeCheckout
                         name="Sourcery"
-                        image="../data/AJ1-poster.jpg"
+                        image={require("../data/AJ1-poster.jpg")}
                         billingAddress
                         shippingAddress
-                        description={`Your total is $${cart.total}`}
-                        amount={(cart.total) * 100}
+                        description={`Your total is $${cart.total === 0? 0:cart.total + 25}`}
+                        amount={(cart.total === 0? 0:cart.total + 25) * 100}
                         token={onToken}
                         stripeKey="pk_test_51MgEOvIdSSK5WZdJ1GSOksBm4T0KjwTY6oadzpMRT0OWTrx3PsBEYcpx8qMXQ602KHTAvrCZ0bq1E7fUENhKvrB2005KINEsIs"
                     >

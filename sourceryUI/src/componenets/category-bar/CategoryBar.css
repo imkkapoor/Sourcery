@@ -1,8 +1,14 @@
+@media only screen and (max-width: 549px) {
+    .category-bar-container li button, .category-bar-container ul
+    , .category-bar-container {
+        font-size: 10px;
+    }
+}
 
 .category-bar-container {
    
     background-color: black;
-    
+    font-size: 2vh;
     padding: 0.9vh;
     
 }
@@ -26,7 +32,7 @@
     color: rgb(184, 184, 184);
     position: sticky;
     top: 0;
-    font-size: 2vh;
+    
 
 }
 

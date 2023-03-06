@@ -18,12 +18,12 @@ import { Link } from "react-router-dom";
 
 export default function NavigationBar() {
     const quantityOfCart = useSelector((state) => state.cart.quantity);
-    console.log(quantityOfCart);
+
     return (
         <div>
             <Navbar sticky="top" className="navbar-custom" variant="dark">
                 <Container>
-                    <Nav className="me-auto left">
+                    <Nav className="me-auto-left">
                         <Navbar.Text id="language">EN</Navbar.Text>
                         <Form className="d-flex">
                             <Form.Control

@@ -23,9 +23,7 @@ export default function BestSellers({cat, type, infoObject}) {
     };
     getProducts();
 }, [cat]);
-console.log(cat)
-console.log(type)
-console.log(Object.entries(type)[0][1])
+
 useEffect(() => {
   cat &&
       setFilteredProducts(
@@ -48,7 +46,7 @@ useEffect(() => {
       </div>
       <div className="best-seller-container">
         {filteredProducts.map((item) => (
-          <BestSellerItem item={item} key={item.id} />
+          <BestSellerItem item={item} key={item._id} />
         ))}
       </div>
     </>

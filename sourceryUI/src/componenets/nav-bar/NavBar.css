@@ -1,19 +1,23 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 549px) {
     .navbar-custom .right .right-contents{
         font-size: 7px;
     }
-    #language{
+    #language,.right,.me-auto-left{
         display: none;
     }
     .navbar-custom .center{
-        font-size: 30px;
+        font-size: 40px;
+    }
+    .navbar-custom{
+        height: 4vh;
     }
   }
+
+
 *{
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     font-size: 2.22vh;
-    
-    
+
 }
 .navbar-custom{
     background-color: #1a1a1b;
@@ -21,11 +25,15 @@
     font-size: 2vh;
     
 }
-
+.navbar-expand .navbar-nav{
+    flex:1 1;
+}
 
 .left{
+  
+
     display: flex;
-    flex: 1;
+    flex: 1 1;
    
     align-items: center;
 }

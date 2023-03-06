@@ -20,7 +20,7 @@ export default function ProductPage() {
     const [open, setOpen] = useState(false);
     const [filter, setFilter] = useState({});
     const [sort, setSort] = useState("newest");
-    console.log(query)
+  
     const handleFilters = (e) => {
         const value = e.target.innerHTML;
     

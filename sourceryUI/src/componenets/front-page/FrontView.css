@@ -1,3 +1,5 @@
+
+
 *{
     font-family: Roboto;
 }
@@ -70,4 +72,22 @@ h2{
     border: none;
     font-size: 2.4vh;
     margin-top: 3vh;
+}
+
+
+@media only screen and (max-width: 549px){
+    .frontview-text p {
+        display: none;
+    }
+    .frontview-text h2{
+        font-size: 18px;
+    }
+    .frontview-text h3{
+        font-size: 14px;
+    }
+    .steal-shop-now{
+        font-size: 1vh;
+        padding: 10px;
+        margin-top: 0;
+    }
 }

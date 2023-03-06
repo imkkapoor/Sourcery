@@ -54,3 +54,59 @@
     margin: 1vh;
     padding: 1vh;
 }
+
+
+
+@media only screen and (max-width: 549px){
+    .featured-text h2{
+        font-size: 16px;
+    }
+    .featured-text p{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    .container-featured-products{
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        padding-top: 0px;
+        justify-content: space-around;
+    }
+    #first-product, #second-product{
+        left: 50px;
+        right: 50px;
+    }
+    .featured-poster{
+        height: 25vh; 
+    }
+    #first-product{
+        top: 32vh;
+        width: 75vw;
+    }
+    #second-product{
+        top: 77.5vh;
+        width: 75vw;
+    }
+    .featured-text button{
+        margin-bottom: 0;
+    }
+
+    .featured-text{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+   #banner-1, #banner-2{
+    position: absolute;
+    height: 28.3vh;
+
+   }
+   #banner-1{
+    top:8vh;
+    
+   }
+   #banner-2{
+    top: 53vh;
+   }
+
+}

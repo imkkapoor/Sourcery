@@ -57,7 +57,7 @@ export default function Product({query, filters, sort }) {
             <div className=""></div>
             <div className="product-container">
                 {filteredProducts.map((item) => (
-                    <ProductEach item={item} key={item.id} />
+                    <ProductEach item={item} key={item._id} />
                 ))}
             </div>
         </>

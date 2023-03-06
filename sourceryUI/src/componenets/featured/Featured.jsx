@@ -6,7 +6,7 @@ import "./Featured.css";
 export default function Featured() {
   return (
     <div className="container-featured-products">
-      <img className="featured-poster" src={airmax} alt="ad-banner"/>
+      <img className="featured-poster" id="banner-1" src={airmax} alt="ad-banner"/>
       <div className="featured-text" id="first-product">
         <h2>ULTIMATE STYLE</h2>
         <p>
@@ -17,7 +17,7 @@ export default function Featured() {
         </p>
       </div>
 
-      <img className="featured-poster" src={nb} alt="ad-banner" />
+      <img className="featured-poster" id="banner-2" src={nb} alt="ad-banner" />
       <div className="featured-text" id="second-product">
         <h2>THE PERFECT BALANCE</h2>
         <p>
