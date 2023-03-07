@@ -15,6 +15,7 @@ import CategoryBar from "../componenets/category-bar/CategoryBar";
 import { useLocation } from "react-router-dom";
 
 export default function ProductPage() {
+   
     const location = useLocation();
     const query = location.pathname.split("/")[2];
     const [open, setOpen] = useState(false);
