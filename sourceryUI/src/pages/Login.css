@@ -53,3 +53,19 @@
 .login-user-container-wrapper p{
     margin: 13px 7px;
 }
+
+
+@media only screen and (max-width: 549px){
+    .login-user-container-wrapper{
+        width: 90%;
+    }
+    .login-user-container{
+        height: 70vh;
+    }.login-user-container-wrapper h1{
+        font-size: 28px;
+    }.login-user-container-wrapper button{
+        font-size: 16px;
+    }.login-user-container-wrapper input{
+        font-size: 14px;
+    }
+}

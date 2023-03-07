@@ -1,13 +1,3 @@
-@media only screen and (max-width: 549px) {
-  .footer-container{
-    flex-direction: column;
-  }
-  .footer-container .right,.footer-container .center,.footer-container .left{
-    display: block;
-    padding: 10px;
-  }
-}
-
 .footer-container {
   display: flex;
   justify-content:flex-start;
@@ -99,4 +89,30 @@
   flex: 1;
   justify-content: start;
   align-items: start;
+}
+.social-container .css-i4bv87-MuiSvgIcon-root {
+  color: white;
+}
+
+
+
+@media only screen and (max-width: 549px) {
+  .footer-container{
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .footer-container .right,.footer-container .center,.footer-container .left{
+    display: block;
+    padding: 10px;
+  }.footer-container .left h2{
+    font-size: 30px;
+  }.footer-container .left p, .footer-container .right p{
+    font-size: 18px;
+  }.footer-container .center ul li{
+    font-size: 18px;
+  }.footer-container .center h2{
+    font-size: 25px;
+  }.footer-container .right h2{
+    font-size: 25px;
+  }
 }

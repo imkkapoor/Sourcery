@@ -52,7 +52,7 @@ export default function NavigationBar() {
                         >
                             AUTHENTICITY
                         </Nav.Link>
-                        <Nav.Link>
+                        <Nav.Link className="right-contents">
                             <p>|</p>
                         </Nav.Link>
 
@@ -64,7 +64,7 @@ export default function NavigationBar() {
                         </Nav.Link>
                         <Link
                             to="/cart"
-                            className="right-contents"
+                            
                             id="shopping-bag"
                         >
                             <Badge

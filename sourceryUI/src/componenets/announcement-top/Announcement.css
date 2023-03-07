@@ -8,3 +8,10 @@
     font-size: 2vh;
     font-weight: bold;
 }
+
+@media only screen and (max-width: 549px) {
+    .announcement{
+        font-size: 10px;
+        height: 4vh;
+    }
+}

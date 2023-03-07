@@ -15,3 +15,17 @@
     color: black;
     font-size: 3vh;
 }
+
+
+@media only screen and (max-width: 549px){
+    .trust-statement-container{
+        flex-direction: column;
+    }
+    .trust-statement-container p{
+        font-size: 16px;
+    }
+    .trust-statement-container h2{
+        font-size: 20px;
+    }
+
+}

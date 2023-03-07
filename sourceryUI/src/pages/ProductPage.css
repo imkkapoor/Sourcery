@@ -127,4 +127,21 @@
     color: #212529;
 
 
+} .filter-menu-and-products-container .filter-container .card{
+    width: 20vw;
+}
+
+
+@media only screen and (max-width: 549px){
+    .filter-menu-and-products-container{
+        display: flex;
+        flex-direction: column;
+    }.filter-menu-and-products-container .filter-container .card{
+        width: 100%;
+    }.filter-menu-and-products-container .filter-container {
+        position: -webkit-sticky;
+    position: sticky;
+    top: 8.9vh;
+    z-index: 100;
+    }
 }

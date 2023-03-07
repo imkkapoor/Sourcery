@@ -45,3 +45,24 @@
 .register-user-container-wrapper p{
     margin: 10px 0px;
 }
+
+@media only screen and (max-width: 549px){
+    .register-user-container-wrapper{
+        width: 100%;
+    }
+    .register-user-container-wrapper h1{
+        font-size: 22px;
+        padding-top: 20px;
+        margin: 6px;
+    }.register-user-container-wrapper p,.register-user-container-wrapper p b{
+        margin: 6px;
+        font-size: 12px;
+    }.register-user-container-wrapper button{
+        width: 96%;
+        font-size: 18px;
+        margin: 6px;
+    }.register-user-container-wrapper input{
+        width: 96%;
+        font-size: 14px;
+    }
+}

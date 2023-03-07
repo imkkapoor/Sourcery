@@ -57,7 +57,7 @@ export default function Cart() {
                                 <h3>{product.title}</h3>
                                 <p id="variant">{product.variant}</p>
                                 <p id="price">${product.price}</p>
-                                <p id="size">{product.size}</p>
+                                <p id="size">Size: {product.size}</p>
                             </div>
                         </div>
                     ))}
@@ -68,7 +68,7 @@ export default function Cart() {
                     <div className="summary">
                         <div className="left">
                             Subtotal: <br></br>
-                            Estimated Shipping:<br></br>
+                            Shipping:<br></br>
                             <b>TOTAL</b>
                         </div>
                         <div className="right">

@@ -43,7 +43,7 @@ export default function ProductSingleDisplay() {
                     <h2 id="price">${product.price}</h2>
                     <div className="size-select">
                         US Men's sizes displayed<br></br>
-                        <div>
+                        <div className="size-button-container">
                             {product.size?.map((s) => (
                                 <button
                                     name="size"

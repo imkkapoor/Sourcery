@@ -80,14 +80,24 @@ h2{
         display: none;
     }
     .frontview-text h2{
-        font-size: 18px;
+        font-size: 16px;
+        margin-bottom: 0;
     }
     .frontview-text h3{
-        font-size: 14px;
+        font-size: 11px;
+        margin-top: 0;
+        margin-bottom: 4px;
     }
     .steal-shop-now{
-        font-size: 1vh;
-        padding: 10px;
+        font-size: 10px;
+        padding: 7px;
         margin-top: 0;
+    }
+    .front-view{
+        height: 75vh;
+    }
+    .frontview-text {
+        bottom: 12vh;
+        left: 50vw;
     }
 }

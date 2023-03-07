@@ -25,7 +25,7 @@ export default function Login() {
             <input placeholder="Enter Password*" type="password" onChange={(e)=>setPassword(e.target.value)}></input>
             <button onClick={(e)=>{e.preventDefault()
             login(dispatch,{username,password})}} disabled={isFetching}>LOGIN</button>
-            {error && < p style={{color: "red", fontWeight:"bold"}}>Something went wrong!</p>}
+            {error && < p style={{color: "red", fontWeight:"bold"}}>Wrong credentials!</p>}
             <p>Forgot Password? | Create an Account</p>
           </form>
         </div>

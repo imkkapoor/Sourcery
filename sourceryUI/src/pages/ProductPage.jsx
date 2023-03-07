@@ -71,7 +71,7 @@ export default function ProductPage() {
                             <Card
                                 className="card"
                                 body
-                                style={{ width: "20vw" }}
+                                
                             >
                                 <Accordion>
                                     <Accordion.Item eventKey="0">

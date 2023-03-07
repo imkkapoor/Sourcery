@@ -52,7 +52,7 @@ export default function Register() {
                         ></input>
 
                         <p>
-                            By clicking "Register", you agree to our{" "}
+                            By clicking "Register", you agree to our
                             <b>Terms and Conditions</b> and
                             <b> Privacy Policy</b>.
                         </p>
