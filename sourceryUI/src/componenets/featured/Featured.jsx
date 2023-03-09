@@ -15,10 +15,11 @@ export default function Featured() {
         Metallic Siver reflective accents. Wavy overlays sit on top of mesh
         base. Sleek and futuristic design. Blends Comfort and Style. Signature
         Airmax cushioning. Get your pair now.
+        
+        </p>
         <Link to="product/640928f67f28f6bc4c4d922d" style={{ textDecoration: "none" }}>
         <button>Shop Now</button>
         </Link>
-        </p>
       </div>
 
       <img className="featured-poster" id="banner-2" src={nb} alt="ad-banner" />
@@ -28,10 +29,10 @@ export default function Featured() {
         Stylish and luxurious sneaker. Exceptional comfort and durability.
         ABZORB cushioning and Ndurance rubber outsoles. A colourway that
         everyone needs.
+        </p>
         <Link to="product/63fe98ae6d24855ac9b67e0a" style={{ textDecoration: "none" }}>
         <button>Shop Now</button>
         </Link>
-        </p>
       </div>
     </div>
   );

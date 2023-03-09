@@ -27,8 +27,15 @@ export default function NavigationBar() {
         document.querySelector("#logout-account").style.display === "none"
             ? (document.querySelector("#logout-account").style.display =
                   "block")
-            : document.querySelector("#logout-account").style.display =
-              "none";
+            : (document.querySelector("#logout-account").style.display =
+                  "none");
+    }
+    function logoutButtonVisisbilityMobile() {
+        document.querySelector("#logout-mobile-account").style.display === "none"
+            ? (document.querySelector("#logout-mobile-account").style.display =
+                  "block")
+            : (document.querySelector("#logout-mobile-account").style.display =
+                  "none");
     }
 
     return (
@@ -47,6 +54,35 @@ export default function NavigationBar() {
                             <Button className="searchButton" variant="light">
                                 <img alt="" src={searchIcon} />
                             </Button>
+                            <Link
+                                to="/login"
+                                id="login-mobile-account"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    user
+                                        ? logoutButtonVisisbilityMobile()
+                                        : navigate("/login");
+                                }}
+                            >
+                                <PersonOutlineOutlined />
+                            </Link>
+                            <Link
+                            to="/login"
+                            className="right-contents"
+                            id="logout-mobile-account"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                const alertLogoutStateMobile = async () => {
+                                    await logout(dispatch);
+                                    document.querySelector(
+                                        "#logout-mobile-account"
+                                    ).style.display = "none";
+                                };
+                                alertLogoutStateMobile();
+                            }}
+                        >
+                            Logout
+                        </Link>
                         </Form>
                     </Nav>
                     <Link to="/" style={{ textDecoration: "none" }}>
@@ -94,7 +130,6 @@ export default function NavigationBar() {
                                     document.querySelector(
                                         "#logout-account"
                                     ).style.display = "none";
-
                                 };
                                 alertLogoutState();
                             }}

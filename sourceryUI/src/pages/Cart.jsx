@@ -9,11 +9,15 @@ import { useSelector } from "react-redux";
 import StripeCheckout from "react-stripe-checkout";
 import { userRequest } from "../requestMethods";
 import { useNavigate } from "react-router-dom";
+import { removeProduct } from "../redux/cartRedux";
+import { useDispatch } from "react-redux";
+import ClearIcon from "@mui/icons-material/Clear";
 
 export default function Cart() {
     const cart = useSelector((state) => state.cart);
     const [stripeToken, setStripeToken] = useState(null);
     const navigate = useNavigate();
+    const dispacth = useDispatch();
 
     const onToken = (token) => {
         setStripeToken(token);
@@ -53,11 +57,32 @@ export default function Cart() {
                         <div className="product-card">
                             <img src={product.image} alt="product"></img>
                             <div className="info">
-                                <h5>{product.company}</h5>
-                                <h3>{product.title}</h3>
-                                <p id="variant">{product.variant}</p>
-                                <p id="price">${product.price}</p>
-                                <p id="size">Size: {product.size}</p>
+                                <div className="left">
+                                    <h5>{product.company}</h5>
+                                    <h3>{product.title}</h3>
+                                    <p id="variant">{product.variant}</p>
+                                    <p className="price-view">${product.price}</p>
+                                    <p id="size">Size: {product.size}</p>
+                                    <button
+                                        onClick={() => {
+                                            dispacth(removeProduct(product));
+                                        }}
+                                        id="remove-product"
+                                    >
+                                        <ClearIcon
+                                            style={{
+                                                fill: "black",
+                                                textAlign: "center",
+                                                alignContent: "center",
+                                                fontSize: "medium",
+                                            }}
+                                        />{" "}
+                                        Remove
+                                    </button>
+                                </div>
+                                <div className="right">
+                                    <p className="price-view">${product.price}</p>
+                                </div>
                             </div>
                         </div>
                     ))}
@@ -73,8 +98,9 @@ export default function Cart() {
                         </div>
                         <div className="right">
                             {cart.total} <br></br>
-                            {cart.total === 0? 0:25}<br></br>
-                            <b>{cart.total === 0? 0: cart.total + 25}</b>
+                            {cart.total === 0 ? 0 : 25}
+                            <br></br>
+                            <b>{cart.total === 0 ? 0 : cart.total + 25}</b>
                         </div>
                     </div>
                     <StripeCheckout
@@ -82,8 +108,10 @@ export default function Cart() {
                         image={require("../data/AJ1-poster.jpg")}
                         billingAddress
                         shippingAddress
-                        description={`Your total is $${cart.total === 0? 0:cart.total + 25}`}
-                        amount={(cart.total === 0? 0:cart.total + 25) * 100}
+                        description={`Your total is $${
+                            cart.total === 0 ? 0 : cart.total + 25
+                        }`}
+                        amount={(cart.total === 0 ? 0 : cart.total + 25) * 100}
                         token={onToken}
                         stripeKey="pk_test_51MgEOvIdSSK5WZdJ1GSOksBm4T0KjwTY6oadzpMRT0OWTrx3PsBEYcpx8qMXQ602KHTAvrCZ0bq1E7fUENhKvrB2005KINEsIs"
                     >

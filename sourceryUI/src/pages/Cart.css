@@ -20,6 +20,7 @@
     align-items: normal;
     display: flex;
     flex-direction: column;
+
     
 }
 
@@ -27,14 +28,13 @@
     display: flex;
     margin-top: 0;
     padding-left: 40px;
-    height: 22vh;
-    
+    margin-bottom: 3vh;
+
 }
 
 .cart-container-rest .left .product-card img {
     height: 21vh;
- 
-    
+
 }
 
 
@@ -42,10 +42,20 @@
     margin: 10px;
     padding-left: 4px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
     align-items: flex-start;
     margin-left: 25px;
     
+}
+
+.cart-container-rest .left .product-card .info .left{
+    align-items: flex-start;
+}
+
+.cart-container-rest .left .product-card .info .left .price-view{
+    display: none;
 }
 
 
@@ -96,7 +106,6 @@
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    padding-left: 10%;
     
         
 }
@@ -144,6 +153,7 @@
     padding: 15px;
     flex-direction: column;
     font-size: 2.5vh;
+    margin-right: 0;
 }
 
 
@@ -153,6 +163,14 @@
     height : 12vh;
     width: 73.63vh;
    
+} 
+
+.cart-container-rest #remove-product{
+    border: none;
+    text-align: center;
+
+    border-radius: 4px;
+    font-size: 14px;
 }
 
 
@@ -181,12 +199,17 @@
         text-align: left;
         font-size: 17px;
     }
+    .cart-container-rest .left .product-card .info h3{
+        font-size: 19px;
+    }
     .cart-container-rest .left .product-card .info{
         margin: 0;
         padding-left: 20px;
     }
     .cart-container-head{
-        font-size: 24px;
+        font-size: 22px;
+        padding-bottom: 20px;
+        padding-top: 10px;
     }
     .cart-container-rest .right .summary{
         background-color: #ebebeb;
@@ -212,5 +235,24 @@
         width: 75vw;
         height: auto;
         margin-top: 10px;
+       
     }
+    .cart-container-rest #remove-product{
+        border: none;
+        background-color: rgb(184, 184, 184);
+        border-radius: 7px;
+        font-size: 13px;
+    }
+
+    .cart-container-rest .left .product-card .info .left .price-view{
+        display: block;
+    }
+
+    .cart-container-rest .left .product-card .info .right{
+        display: none;
+    }
+    .cart-container-rest .left .product-card img{
+        margin-left: 7vw;
+    }
+
 }

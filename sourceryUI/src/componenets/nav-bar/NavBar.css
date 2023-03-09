@@ -1,52 +1,52 @@
-
-*{
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+* {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+        "Arial", sans-serif;
     font-size: 2.22vh;
-
 }
-.navbar-custom{
+.navbar-custom {
     background-color: #1a1a1b;
     height: 11vh;
     font-size: 2vh;
-    
 }
-.navbar-expand .navbar-nav{
-    flex:1 1;
+.navbar-expand .navbar-nav {
+    flex: 1 1;
 }
 
-.left{
-  
-
+.left {
     display: flex;
     flex: 1 1;
-   
+
     align-items: center;
 }
-.center{
+#login-mobile-account {
+    display: none;
+    padding: 0.5rem;
+}
+.center {
     flex: 2;
     color: white;
     text-align: center;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
     font-size: 7.3vh;
-    font-family: 'Zeyada';
+    font-family: "Zeyada";
     margin-top: 2.08vh;
     font-weight: 600;
 }
-.right-contents, .right-contents:hover, .right-contents:active, .right-contents:focus{
+.right-contents,
+.right-contents:hover,
+.right-contents:active,
+.right-contents:focus {
     color: #d2d2d2;
     font-size: 2vh;
 }
 
-
-
-.navbar-custom .right{
+.navbar-custom .right {
     flex: 1;
     justify-content: end;
-    
 }
 
-.searchBar{
+.searchBar {
     border-radius: 14px;
     height: 4.3vh;
     border: none;
@@ -54,7 +54,7 @@
     width: 7vw;
 }
 
-.searchButton{
+.searchButton {
     background-color: white;
     border-radius: 14px;
     height: 4.3vh;
@@ -62,14 +62,13 @@
     margin-left: -25px;
 }
 
-img{
+img {
     display: flex;
-    align-items:center ;
+    align-items: center;
     height: 2.7vh;
-    
 }
 
-#language{
+#language {
     color: #d2d2d2;
     cursor: pointer;
     font-size: 2vh;
@@ -83,21 +82,22 @@ img{
     /* margin-top: 6px; */
 }
 
-#shopping-bag,#login-account{
+#shopping-bag,
+#login-account {
     padding: 0.5rem;
 }
-.MuiSvgIcon-root{
+.MuiSvgIcon-root {
     color: #d2d2d2;
     display: block;
 }
 .navbar-custom .right {
     position: relative;
 }
-.navbar-custom .right #logout-account{
+.navbar-custom .right #logout-account {
     padding: 0.3rem 0.8rem;
     display: none;
     position: absolute;
-    right:3.8rem;
+    right: 3.8rem;
     /* bottom: 0; */
     top: 2.2rem;
     font-size: 14px;
@@ -107,32 +107,52 @@ img{
     text-decoration: none;
     font-weight: bold;
 }
-
-
+#logout-mobile-account {
+    display: none;
+}
 @media only screen and (max-width: 549px) {
-    .navbar-custom .right .right-contents{
+    .navbar-custom .right .right-contents {
         font-size: 7px;
     }
-    #language,.searchButton,.searchBar{
+    #language,
+    .searchButton,
+    .searchBar {
         display: none;
     }
-    .navbar-custom .center{
+    .navbar-custom .center {
         font-size: 45px;
     }
-    .navbar-custom{
+    .navbar-custom {
         height: 9vh;
     }
-    .right-contents{
+    .right-contents {
         display: none;
     }
-    .right .right-contents #shopping-bag{
+    .right .right-contents #shopping-bag {
         display: block;
-        
     }
-    .MuiSvgIcon-root{
+    .MuiSvgIcon-root {
         color: #d2d2d2;
         display: block;
     }
-    
-  }
+    #login-mobile-account {
+        display: block;
+    }
+    .navbar-custom .left {
+        position: relative;
+    }
+    #logout-mobile-account {
+        padding: 0.3rem 0.8rem;
+        display: none;
+        position: absolute;
+        left: 1vw;
 
+        top: 6.5vh;
+        font-size: 12px;
+        background-color: black;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}

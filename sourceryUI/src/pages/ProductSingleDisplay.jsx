@@ -3,7 +3,6 @@ import Announcement from "../componenets/announcement-top/Announcement";
 import Footer from "../componenets/footer/Footer";
 import NavigationBar from "../componenets/nav-bar/NavigationBar";
 import TrustStatement from "../componenets/trust-statement/TrustStatement"
-// import Newsletter from "../componenets/news-letter/Newsletter";
 import "./ProductSingleDisplay.css";
 import { useLocation } from "react-router-dom";
 import { publicRequest } from "../requestMethods";
