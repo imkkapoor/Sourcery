@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Announcement from "../componenets/announcement-top/Announcement";
 import Footer from "../componenets/footer/Footer";
 import NavigationBar from "../componenets/nav-bar/NavigationBar";
+import TrustStatement from "../componenets/trust-statement/TrustStatement"
 // import Newsletter from "../componenets/news-letter/Newsletter";
 import "./ProductSingleDisplay.css";
 import { useLocation } from "react-router-dom";
@@ -65,6 +66,7 @@ export default function ProductSingleDisplay() {
                     </div>
                 </div>
             </div>
+            <TrustStatement/>
             <Footer />
         </>
     );

@@ -13,11 +13,23 @@ import {
 } from "@mui/icons-material";
 
 import Badge from "@mui/material/Badge";
-import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+import { logout } from "../../redux/apiCalls";
 
 export default function NavigationBar() {
     const quantityOfCart = useSelector((state) => state.cart.quantity);
+    const navigate = useNavigate();
+    const user = useSelector((state) => state.user.currentUser);
+    const dispatch = useDispatch();
+
+    function logoutButtonVisisbility() {
+        document.querySelector("#logout-account").style.display === "none"
+            ? (document.querySelector("#logout-account").style.display =
+                  "block")
+            : document.querySelector("#logout-account").style.display =
+              "none";
+    }
 
     return (
         <div>
@@ -37,7 +49,9 @@ export default function NavigationBar() {
                             </Button>
                         </Form>
                     </Nav>
-                    <Navbar.Text className="center">SOURCERY</Navbar.Text>
+                    <Link to="/" style={{ textDecoration: "none" }}>
+                        <Navbar.Text className="center">SOURCERY</Navbar.Text>
+                    </Link>
 
                     <Nav className="right">
                         <Nav.Link
@@ -56,17 +70,41 @@ export default function NavigationBar() {
                             <p>|</p>
                         </Nav.Link>
 
-                        <Link to="/login" className="right-contents" id="login-account">
+                        <Link
+                            to="/login"
+                            className="right-contents"
+                            id="login-account"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                user
+                                    ? logoutButtonVisisbility()
+                                    : navigate("/login");
+                            }}
+                        >
                             <PersonOutlineOutlined />
+                        </Link>
+                        <Link
+                            to="/login"
+                            className="right-contents"
+                            id="logout-account"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                const alertLogoutState = async () => {
+                                    await logout(dispatch);
+                                    document.querySelector(
+                                        "#logout-account"
+                                    ).style.display = "none";
+
+                                };
+                                alertLogoutState();
+                            }}
+                        >
+                            Logout
                         </Link>
                         <Nav.Link className="right-contents" href="#favourites">
                             <FavoriteBorder />
                         </Nav.Link>
-                        <Link
-                            to="/cart"
-                            
-                            id="shopping-bag"
-                        >
+                        <Link to="/cart" id="shopping-bag">
                             <Badge
                                 badgeContent={quantityOfCart}
                                 color="primary"

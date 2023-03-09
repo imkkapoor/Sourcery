@@ -1,6 +1,7 @@
 import React from "react";
 import "./FrontView.css";
 import Nike from "./blue_travis.jpg";
+import { Link } from "react-router-dom";
 
 export default function FrontView() {
   return (
@@ -15,7 +16,9 @@ export default function FrontView() {
           leather midfoot Swooshes. Cactus Jack and fragment design logos
           embossed on each heel. Shop this essential colour story now.
           <br></br></p>
+          <Link to="product/6409296d7f28f6bc4c4d922f" style={{ textDecoration: "none" }}>
           <button className="steal-shop-now">SHOP NOW</button>
+          </Link>
         </div>
       </div>
     </div>

@@ -90,6 +90,23 @@ img{
     color: #d2d2d2;
     display: block;
 }
+.navbar-custom .right {
+    position: relative;
+}
+.navbar-custom .right #logout-account{
+    padding: 0.3rem 0.8rem;
+    display: none;
+    position: absolute;
+    right:3.8rem;
+    /* bottom: 0; */
+    top: 2.2rem;
+    font-size: 14px;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 
 @media only screen and (max-width: 549px) {

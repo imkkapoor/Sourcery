@@ -15,20 +15,19 @@ import CategoryBar from "../componenets/category-bar/CategoryBar";
 import { useLocation } from "react-router-dom";
 
 export default function ProductPage() {
-   
     const location = useLocation();
     const query = location.pathname.split("/")[2];
     const [open, setOpen] = useState(false);
     const [filter, setFilter] = useState({});
     const [sort, setSort] = useState("newest");
-  
+   
     const handleFilters = (e) => {
         const value = e.target.innerHTML;
-    
+
         setFilter({
             ...filter,
             [e.target.name]: value.toLowerCase(),
-        })
+        });
 
         console.log(filter);
     };
@@ -67,13 +66,10 @@ export default function ProductPage() {
 
             <div className="filter-menu-and-products-container">
                 <div className="filter-container">
-                    <Collapse in={open} dimension="width">
+               
+                <Collapse in={open} dimension={window.innerWidth<550 ? "height":"width"}>
                         <div id="collapse-text">
-                            <Card
-                                className="card"
-                                body
-                                
-                            >
+                            <Card className="card" body>
                                 <Accordion>
                                     <Accordion.Item eventKey="0">
                                         <Accordion.Header
@@ -246,11 +242,7 @@ export default function ProductPage() {
                     </Collapse>
                 </div>
 
-                <Product
-                    query={query}
-                    filters={filter}
-                    sort={sort}
-                />
+                <Product query={query} filters={filter} sort={sort} />
             </div>
             <Newsletter />
             <Footer />

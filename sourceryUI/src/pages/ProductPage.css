@@ -131,7 +131,10 @@
     width: 20vw;
 }
 
-
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,1);
+}
 @media only screen and (max-width: 549px){
     .filter-menu-and-products-container{
         display: flex;

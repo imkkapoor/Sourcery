@@ -9,7 +9,7 @@ export default function ShoppingPageBanner() {
                     <h6>JORDAN</h6>
                     <h3>THE BEST OF AIR JORDAN 1's</h3>
                     <p>
-                        Endlessly versatile. Clean and simple. The classic of
+                        Endlessly versatile. Clean and simple.The classic of
                         all time. A ton of colour ways to suit your style.
                     </p>
                 </div>

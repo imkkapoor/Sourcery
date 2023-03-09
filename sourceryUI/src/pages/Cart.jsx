@@ -100,8 +100,8 @@ export default function Cart() {
                 cat="shoes"
                 type={{ categories: "best-seller" }}
                 infoObject={{
-                    header: "Best Sellers",
-                    link: "EXPLORE ALL BEST SELLERS",
+                    header: "You may also like",
+                    link: "",
                 }}
             />
             <Footer />
