@@ -63,6 +63,9 @@ export default function ProductPage() {
                     </div>
                 </div>
             </div>
+            <div className="loading-container" style={{display: "flex"}}>
+                <div className="loading"></div>
+            </div>
 
             <div className="filter-menu-and-products-container">
                 <div className="filter-container">

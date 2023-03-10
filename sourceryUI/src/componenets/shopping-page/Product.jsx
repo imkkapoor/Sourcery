@@ -3,24 +3,25 @@ import ProductEach from "./ProductEach";
 import "./Product.css";
 import axios from "axios";
 
-export default function Product({query, filters, sort }) {
+export default function Product({ query, filters, sort }) {
     const [products, setProducts] = useState([]);
     const [filteredProducts, setFilteredProducts] = useState([]);
 
     useEffect(() => {
         const getProducts = async () => {
             try {
+                document.querySelector(".loading-container").style.display = "flex";
                 const res = await axios.get(
-                    
+
                         `https://sourceryapi.onrender.com/api/products?${query}`
-                       
+
                 );
+                document.querySelector(".loading-container").style.display = "none"
                 setProducts(res.data);
             } catch (err) {}
         };
         getProducts();
     }, [query]);
-
 
     useEffect(() => {
         query &&
@@ -34,27 +35,24 @@ export default function Product({query, filters, sort }) {
     }, [products, query, filters]);
 
     useEffect(() => {
-        if ((sort === "best-seller")) {
+        if (sort === "best-seller") {
             setFilteredProducts((prev) =>
                 [...prev].sort((a, b) => a.createdAt - b.createdAt)
             );
-        }else if((sort === "asc")) {
+        } else if (sort === "asc") {
             setFilteredProducts((prev) =>
                 [...prev].sort((a, b) => a.price - b.price)
             );
-        }else{
+        } else {
             setFilteredProducts((prev) =>
                 [...prev].sort((a, b) => b.price - a.price)
             );
         }
-    },[sort]);
-
-
-
+    }, [sort]);
 
     return (
         <>
-            <div className=""></div>
+           
             <div className="product-container">
                 {filteredProducts.map((item) => (
                     <ProductEach item={item} key={item._id} />

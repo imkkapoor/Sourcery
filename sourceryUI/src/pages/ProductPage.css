@@ -135,6 +135,9 @@
     box-shadow: none;
     border-color: rgba(0,0,0,1);
 }
+
+
+
 @media only screen and (max-width: 549px){
     .filter-menu-and-products-container{
         display: flex;
@@ -148,3 +151,30 @@
     z-index: 100;
     }
 }
+
+
+
+.loading {
+    display: flex;
+    border: 8px solid #adadad;
+    border-top: 8px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1.8s linear infinite;
+  }
+  
+  @keyframes spin {
+    0%  { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+  }
+
+  .loading-container{
+  
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4.9vh;
+    padding-bottom: 0;
+    background-color: #fff;
+  }

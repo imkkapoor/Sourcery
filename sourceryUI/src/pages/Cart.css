@@ -74,7 +74,7 @@
 .cart-container-rest .left .product-card h3 {
     font-weight: bold;
     margin-top: 0.2vh;
-    text-align: center;
+    text-align: start;
     font-size: 2.8vh;
     color: black;
     margin-bottom: 0.1vh;
@@ -88,11 +88,12 @@
     font-weight: normal;
     margin-bottom: 1vh;
     padding-left: 0;
+    text-align: start;
 }
 
 
 .cart-container-rest .left .product-card h5 {
-    text-align: center;
+    text-align: start;
     font-size: 1.9vh;
     margin-bottom: 0;
     color: rgb(105, 105, 105);
@@ -170,7 +171,7 @@
     text-align: center;
 
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 2.3vh;
 }
 
 
@@ -239,8 +240,8 @@
     }
     .cart-container-rest #remove-product{
         border: none;
-        background-color: rgb(184, 184, 184);
-        border-radius: 7px;
+        /* background-color: rgb(184, 184, 184); */
+        border-radius: 4px;
         font-size: 13px;
     }
 
@@ -252,7 +253,7 @@
         display: none;
     }
     .cart-container-rest .left .product-card img{
-        margin-left: 7vw;
+        margin-left:9vw;
     }
 
 }
