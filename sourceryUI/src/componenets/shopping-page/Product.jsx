@@ -11,12 +11,14 @@ export default function Product({ query, filters, sort }) {
         const getProducts = async () => {
             try {
                 document.querySelector(".loading-container").style.display = "flex";
+                document.querySelector(".filter-menu-and-products-container").style.display="none";
                 const res = await axios.get(
 
                         `https://sourceryapi.onrender.com/api/products?${query}`
 
                 );
                 document.querySelector(".loading-container").style.display = "none"
+                document.querySelector(".filter-menu-and-products-container").style.display="flex";
                 setProducts(res.data);
             } catch (err) {}
         };

@@ -5,6 +5,7 @@ import Footer from "../componenets/footer/Footer";
 import NavigationBar from "../componenets/nav-bar/NavigationBar";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../redux/apiCalls";
+import { Link } from "react-router-dom";
 
 export default function Login() {
     const [username, setUsername] = useState("");
@@ -43,7 +44,7 @@ export default function Login() {
                                 Wrong credentials!
                             </p>
                         )}
-                        <p>Forgot Password? | Create an Account</p>
+                        <p>Forgot Password? | <Link to="/register" style={{textDecoration:"none"}} id="toRegister">Create an Account</Link></p>
                     </form>
                 </div>
             </div>

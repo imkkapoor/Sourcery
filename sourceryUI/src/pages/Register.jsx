@@ -4,6 +4,7 @@ import Announcement from "../componenets/announcement-top/Announcement";
 import Footer from "../componenets/footer/Footer";
 import NavigationBar from "../componenets/nav-bar/NavigationBar";
 import axios from "axios";
+import { Navigate } from "react-router-dom";
 
 export default function Register() {
     const [username, setUsername] = useState("");
@@ -11,7 +12,7 @@ export default function Register() {
     const [password, setPassword] = useState("");
     console.log(username, password, email);
 
-    const handleSubmit = async (e) => {
+    const handleRegister = async (e) => {
       e.preventDefault();
       try {
           const response = await axios.post(
@@ -21,6 +22,7 @@ export default function Register() {
               password: password,
           });
           console.log(response.data);
+          <Navigate to="/login"/>
       } catch (err) {
           console.log(err);
       }
@@ -46,7 +48,7 @@ export default function Register() {
                             onChange={(e) => setEmail(e.target.value)}
                             placeholder="Email Address*"
                         ></input>
-                        <input
+                        <input type="password"
                             onChange={(e) => setPassword(e.target.value)}
                             placeholder="Create Password*"
                         ></input>
@@ -56,7 +58,7 @@ export default function Register() {
                             <b>Terms and Conditions</b> and
                             <b> Privacy Policy</b>.
                         </p>
-                        <button onClick={handleSubmit}>REGISTER</button>
+                        <button onClick={handleRegister}>REGISTER</button>
                     </form>
                 </div>
             </div>
