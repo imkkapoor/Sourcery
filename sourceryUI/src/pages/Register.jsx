@@ -4,13 +4,14 @@ import Announcement from "../componenets/announcement-top/Announcement";
 import Footer from "../componenets/footer/Footer";
 import NavigationBar from "../componenets/nav-bar/NavigationBar";
 import axios from "axios";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Register() {
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     console.log(username, password, email);
+    const navigate = useNavigate();
 
     const handleRegister = async (e) => {
       e.preventDefault();
@@ -22,9 +23,12 @@ export default function Register() {
               password: password,
           });
           console.log(response.data);
-          <Navigate to="/login"/>
+          alert("Regidtration was successful!")
+            navigate("/login");
+          
       } catch (err) {
           console.log(err);
+          document.querySelector("#register-error").style.display="block";
       }
   };
 
@@ -52,7 +56,7 @@ export default function Register() {
                             onChange={(e) => setPassword(e.target.value)}
                             placeholder="Create Password*"
                         ></input>
-
+                        <p style={{color:"red", display:"none"}} id = "register-error">Please try again!</p>
                         <p>
                             By clicking "Register", you agree to our
                             <b>Terms and Conditions</b> and
