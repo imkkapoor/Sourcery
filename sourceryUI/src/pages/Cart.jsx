@@ -32,8 +32,7 @@ export default function Cart() {
                     tokenId: stripeToken.id,
                     amount: cart.total !== 0 ? (cart.total + 25) * 100 : 0,
                 });
-                console.log(res, "bitch");
-
+              
                 const response = await axios.post(
                     "https://sourceryapi.onrender.com/api/orders/",
                     {
