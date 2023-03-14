@@ -23,7 +23,7 @@ export default function Register() {
               password: password,
           });
           console.log(response.data);
-          alert("Regidtration was successful!")
+          alert("Registration was successful!")
             navigate("/login");
           
       } catch (err) {

@@ -7,18 +7,20 @@ import BestSellers from "../componenets/best-sellers/BestSellers";
 import TrustStatement from "../componenets/trust-statement/TrustStatement";
 import { useSelector } from "react-redux";
 import StripeCheckout from "react-stripe-checkout";
-import { userRequest } from "../requestMethods";
+import {userRequest} from "../requestMethods";
 import { useNavigate } from "react-router-dom";
 import { removeProduct } from "../redux/cartRedux";
 import { useDispatch } from "react-redux";
 import ClearIcon from "@mui/icons-material/Clear";
+import axios from "axios";
 
 export default function Cart() {
     const cart = useSelector((state) => state.cart);
+    const user = useSelector((state) => state.user);
     const [stripeToken, setStripeToken] = useState(null);
     const navigate = useNavigate();
     const dispacth = useDispatch();
-
+   
     const onToken = (token) => {
         setStripeToken(token);
     };
@@ -28,8 +30,21 @@ export default function Cart() {
             try {
                 const res = await userRequest.post("/checkout/payment", {
                     tokenId: stripeToken.id,
-                    amount: (cart.total + 25) * 100,
+                    amount: cart.total !== 0 ? (cart.total + 25) * 100 : 0,
                 });
+                console.log(res, "bitch");
+
+                const response = await axios.post(
+                    "https://sourceryapi.onrender.com/api/orders/",
+                    {
+                        userId: user.currentUser._id,
+                        products: cart.products,
+                        amount: cart.total !== 0 ? (cart.total + 25) * 100 : 0,
+                        address: res.data.billing_details.address,
+                    },{headers: {"token" : `Bearer ${user.currentUser.accessToken}`}}
+                );
+
+                console.log(response);
 
                 navigate("/success", {
                     stripeData: res.data,
@@ -40,8 +55,8 @@ export default function Cart() {
             }
         };
         stripeToken && makeRequest();
-    }, [stripeToken, cart, navigate]);
-    console.log(stripeToken);
+    }, [stripeToken, cart, navigate, user]);
+    // console.log(stripeToken);
 
     return (
         <>
@@ -53,15 +68,17 @@ export default function Cart() {
             </div>
             <div className="cart-container-rest">
                 <div className="left">
-                    {cart.products.map((product) => (
-                        <div className="product-card">
+                    {cart.products.map((product, index) => (
+                        <div className="product-card" key={index}>
                             <img src={product.image} alt="product"></img>
                             <div className="info">
                                 <div className="left">
                                     <h5>{product.company}</h5>
                                     <h3>{product.title}</h3>
                                     <p id="variant">{product.variant}</p>
-                                    <p className="price-view">${product.price}</p>
+                                    <p className="price-view">
+                                        ${product.price}
+                                    </p>
                                     <p id="size">Size: {product.size}</p>
                                     <button
                                         onClick={() => {
@@ -81,7 +98,9 @@ export default function Cart() {
                                     </button>
                                 </div>
                                 <div className="right">
-                                    <p className="price-view">${product.price}</p>
+                                    <p className="price-view">
+                                        ${product.price}
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -108,6 +127,7 @@ export default function Cart() {
                         image={require("../data/AJ1-poster.jpg")}
                         billingAddress
                         shippingAddress
+                        shipping_address_collection
                         description={`Your total is $${
                             cart.total === 0 ? 0 : cart.total + 25
                         }`}
