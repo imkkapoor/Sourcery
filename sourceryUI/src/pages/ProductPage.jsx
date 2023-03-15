@@ -6,6 +6,7 @@ import NavigationBar from "../componenets/nav-bar/NavigationBar";
 import Newsletter from "../componenets/news-letter/Newsletter";
 import Product from "../componenets/shopping-page/Product";
 import "./ProductPage.css";
+import { queryWiseList } from "../data/queryWiseList";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Collapse from "react-bootstrap/Collapse";
@@ -20,7 +21,7 @@ export default function ProductPage() {
     const [open, setOpen] = useState(false);
     const [filter, setFilter] = useState({});
     const [sort, setSort] = useState("newest");
-   
+
     const handleFilters = (e) => {
         const value = e.target.innerHTML;
 
@@ -31,13 +32,27 @@ export default function ProductPage() {
 
         console.log(filter);
     };
+    const banner = query.split("=")[1];
+    console.log(banner);
 
+    function findArrayElementByTitle() {
+        var result = queryWiseList.find((element) => {
+            return element.query === banner;
+        });
+        
+        return result
+    
+    }
+
+    const data = findArrayElementByTitle()
+
+    
     return (
         <div>
             <Announcement />
             <NavigationBar />
             <CategoryBar />
-            <ShoppingPageBanner />
+            <ShoppingPageBanner infoObject={{brand: data.brand,imageSrc: data.imageSrc,text: data.text, line:data.line} }/>
             <div className="sort-filter-category-header">
                 <div className="left">
                     <Button
@@ -63,14 +78,16 @@ export default function ProductPage() {
                     </div>
                 </div>
             </div>
-            <div className="loading-container" style={{display: "flex"}}>
+            <div className="loading-container" style={{ display: "flex" }}>
                 <div className="loading"></div>
             </div>
 
             <div className="filter-menu-and-products-container">
                 <div className="filter-container">
-               
-                <Collapse in={open} dimension={window.innerWidth<550 ? "height":"width"}>
+                    <Collapse
+                        in={open}
+                        dimension={window.innerWidth < 550 ? "height" : "width"}
+                    >
                         <div id="collapse-text">
                             <Card className="card" body>
                                 <Accordion>

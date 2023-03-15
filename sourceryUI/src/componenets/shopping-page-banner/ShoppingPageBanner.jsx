@@ -1,16 +1,16 @@
 import React from "react";
 import "./ShoppingPageBanner.css"
-export default function ShoppingPageBanner() {
+export default function ShoppingPageBanner({infoObject}) {
     return (
         <>
             <div className="shopping-page-banner-container">
-                <img src={require("../../data/AJ1-poster.jpg")} alt = "ad-banner" />
+                <img src={infoObject.imageSrc} alt = "ad-banner" />
+                {console.log(infoObject)}
                 <div className="info">
-                    <h6>JORDAN</h6>
-                    <h3>THE BEST OF AIR JORDAN 1's</h3>
+                    <h6>{infoObject.brand}</h6>
+                    <h3>{infoObject.line}</h3>
                     <p>
-                        Endlessly versatile. Clean and simple.The classic of
-                        all time. A ton of colour ways to suit your style.
+                        {infoObject.text}
                     </p>
                 </div>
             </div>

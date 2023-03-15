@@ -8,7 +8,7 @@ import TrustStatement from "../componenets/trust-statement/TrustStatement";
 import { useSelector } from "react-redux";
 import StripeCheckout from "react-stripe-checkout";
 import {userRequest} from "../requestMethods";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { removeProduct } from "../redux/cartRedux";
 import { useDispatch } from "react-redux";
 import ClearIcon from "@mui/icons-material/Clear";
@@ -68,6 +68,7 @@ export default function Cart() {
             <div className="cart-container-rest">
                 <div className="left">
                     {cart.products.map((product, index) => (
+                        <Link style = {{textDecoration:"none"}}to={`/product/${product._id}`}>
                         <div className="product-card" key={index}>
                             <img src={product.image} alt="product"></img>
                             <div className="info">
@@ -103,6 +104,7 @@ export default function Cart() {
                                 </div>
                             </div>
                         </div>
+                        </Link>
                     ))}
                 </div>
 
