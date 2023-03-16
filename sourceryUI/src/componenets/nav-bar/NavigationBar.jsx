@@ -31,7 +31,8 @@ export default function NavigationBar() {
                   "none");
     }
     function logoutButtonVisisbilityMobile() {
-        document.querySelector("#logout-mobile-account").style.display === "none"
+        document.querySelector("#logout-mobile-account").style.display ===
+        "none"
             ? (document.querySelector("#logout-mobile-account").style.display =
                   "block")
             : (document.querySelector("#logout-mobile-account").style.display =
@@ -67,27 +68,31 @@ export default function NavigationBar() {
                                 <PersonOutlineOutlined />
                             </Link>
                             <Link
-                            to="/login"
-                            className="right-contents"
-                            id="logout-mobile-account"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                const alertLogoutStateMobile = async () => {
-                                    await logout(dispatch);
-                                    document.querySelector(
-                                        "#logout-mobile-account"
-                                    ).style.display = "none";
-                                };
-                                alertLogoutStateMobile();
-                            }}
-                        >
-                            Logout
-                        </Link>
+                                to="/login"
+                                className="right-contents"
+                                id="logout-mobile-account"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    const alertLogoutStateMobile = async () => {
+                                        await logout(dispatch);
+                                        document.querySelector(
+                                            "#logout-mobile-account"
+                                        ).style.display = "none";
+                                    };
+                                    alertLogoutStateMobile();
+                                }}
+                            >
+                                Logout
+                            </Link>
                         </Form>
                     </Nav>
-                    <Link to="/" style={{ textDecoration: "none" }}>
-                        <Navbar.Text className="center">SOURCERY</Navbar.Text>
-                    </Link>
+
+                    <Navbar.Text className="center">
+                        
+                        <Link to="/" style={{ textDecoration: "none" }} id="title">
+                            SOURCERY
+                        </Link>
+                    </Navbar.Text>
 
                     <Nav className="right">
                         <Nav.Link

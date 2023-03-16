@@ -110,6 +110,20 @@ img {
 #logout-mobile-account {
     display: none;
 }
+
+#title{
+    flex: 2 1;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 7.3vh;
+    font-family: "Zeyada";
+    
+    font-weight: 600;
+}
+
+
 @media only screen and (max-width: 549px) {
     .navbar-custom .right .right-contents {
         font-size: 7px;
@@ -156,3 +170,4 @@ img {
         font-weight: bold;
     }
 }
+
