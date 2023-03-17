@@ -43,19 +43,19 @@
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 850px) {
     .shopping-page-banner-container .info h3{
-        font-size: 14px;
-        font-size: 3.5vw;
+        font-size: 13px;
+       
     }
     .shopping-page-banner-container .info h6{
         font-size: 10px;
-        font-size: 2.5vw;
+       
 
     }
     .shopping-page-banner-container .info p{
         font-size: 10px;
-        font-size: 2.5vw;
+     
     }
     .shopping-page-banner-container .info{
         width: 90%;
