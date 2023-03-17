@@ -17,7 +17,7 @@ export default function Featured() {
         Airmax cushioning. Get your pair now.
         
         </p>
-        <Link to="product/640928f67f28f6bc4c4d922d" style={{ textDecoration: "none" }}>
+        <Link to="product/64141281247df5b4c3cd0962" style={{ textDecoration: "none" }}>
         <button>Shop Now</button>
         </Link>
       </div>
@@ -30,7 +30,7 @@ export default function Featured() {
         ABZORB cushioning and Ndurance rubber outsoles. A colourway that
         everyone needs.
         </p>
-        <Link to="product/63fe98ae6d24855ac9b67e0a" style={{ textDecoration: "none" }}>
+        <Link to="product/64141230247df5b4c3cd0950" style={{ textDecoration: "none" }}>
         <button>Shop Now</button>
         </Link>
       </div>

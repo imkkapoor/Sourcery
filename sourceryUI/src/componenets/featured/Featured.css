@@ -19,7 +19,7 @@
 .featured-text{
     background-color: rgb(255, 255, 255);
     width: 30vw;
-    top:28vw;
+    top:29vw;
     padding: 2vh;
     padding-left: 3vh;
     padding-top: 3vh;
@@ -30,7 +30,7 @@
 
 .featured-text h2{
     color: black;
-    
+
 }
 
 #first-product{
@@ -57,7 +57,8 @@
 
 
 
-@media only screen and (max-width: 1000px){
+
+@media only screen and (max-width: 660px){
     .featured-text h2{
         font-size: 16px;
         margin-top: 8px;

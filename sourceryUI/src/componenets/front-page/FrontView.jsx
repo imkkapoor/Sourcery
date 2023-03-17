@@ -16,7 +16,7 @@ export default function FrontView() {
           leather midfoot Swooshes. Cactus Jack and fragment design logos
           embossed on each heel. Shop this essential colour story now.
           <br></br></p>
-          <Link to="product/6409296d7f28f6bc4c4d922f" style={{ textDecoration: "none" }}>
+          <Link to="product/64141287247df5b4c3cd0964" style={{ textDecoration: "none" }}>
           <button className="steal-shop-now">SHOP NOW</button>
           </Link>
         </div>
