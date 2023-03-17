@@ -33,25 +33,24 @@ export default function ProductSingleDisplay() {
         <>
             <Announcement />
             <NavigationBar />
-            <div className="single-product-container">
-                <Carousel fade interval={null} variant="dark">
-                    <Carousel.Item>
-                        <div className="left">
-                            <img src={product.image} alt="product-banner" />
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="left">
-                            <img src="https://drive.google.com/uc?export=view&id=17fqqrAM6xcwShEXwxfB2--c_XEJCNNRr" alt="product-banner" />
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="left">
-                            <img src="https://drive.google.com/uc?export=view&id=1ZlJAShNlEQh6To6iOjd3NCNZe3xA320a" alt="product-banner" />
-                        </div>
-                    </Carousel.Item>
 
-                </Carousel>
+            <div className="single-product-container">
+                <div className="carousel-container">
+                    <Carousel fade interval={null} variant="dark">
+                        <Carousel.Item>
+                            <div className="left">
+                                <img src={product.image} alt="product-banner" />
+                            </div>
+                        </Carousel.Item>
+                        {product.sideBanners?.map((item) => (
+                            <Carousel.Item>
+                                <div className="left">
+                                    <img src={`${item}`} alt="side-banners" />
+                                </div>
+                            </Carousel.Item>
+                        ))}
+                    </Carousel>
+                </div>
                 <div className="right">
                     <h4>{product.company}</h4>
                     <h1>{product.title}</h1>

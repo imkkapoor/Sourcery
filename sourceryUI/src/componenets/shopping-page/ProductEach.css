@@ -62,3 +62,15 @@ a:hover{
     color: rgb(255, 0, 0);
     fill: red;
 }
+
+@media only screen and (max-width: 1000px) {
+    .product-each-container img {
+        
+        height: 24vh;
+        margin-top: 7vh;
+    }
+    .product-each-container {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+}

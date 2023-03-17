@@ -75,7 +75,7 @@ h2{
 }
 
 
-@media only screen and (max-width: 549px){
+@media only screen and (max-width: 1000px){
     .frontview-text p {
         display: none;
     }

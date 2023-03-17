@@ -40,7 +40,7 @@
 }
 
 
-@media only screen and (max-width: 549px) {
+@media only screen and (max-width: 1000px) {
     .category-bar-container li button, .category-bar-container ul
     , .category-bar-container {
         font-size: 9px;

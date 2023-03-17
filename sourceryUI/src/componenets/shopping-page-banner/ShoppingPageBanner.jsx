@@ -6,7 +6,7 @@ export default function ShoppingPageBanner({infoObject}) {
         <>
             <div className="shopping-page-banner-container">
                 <img src={infoObject.imageSrc} alt = "ad-banner" />
-                {console.log(infoObject)}
+                
                 <div className="info">
                     <h6>{infoObject.brand}</h6>
                     <h3>{infoObject.line}</h3>

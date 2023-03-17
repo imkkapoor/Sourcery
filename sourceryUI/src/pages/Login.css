@@ -55,7 +55,7 @@
 }
 
 
-@media only screen and (max-width: 549px){
+@media only screen and (max-width: 1000px){
     .login-user-container-wrapper{
         width: 90%;
     }

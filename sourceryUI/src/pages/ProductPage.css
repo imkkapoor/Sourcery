@@ -138,7 +138,7 @@
 
 
 
-@media only screen and (max-width: 549px){
+@media only screen and (max-width: 1000px){
     .filter-menu-and-products-container{
         display: flex;
         flex-direction: column;
