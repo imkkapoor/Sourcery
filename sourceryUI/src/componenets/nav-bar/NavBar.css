@@ -119,7 +119,6 @@ img {
     justify-content: center;
     font-size: 7.3vh;
     font-family: "Zeyada";
-    
     font-weight: 600;
 }
 
@@ -133,7 +132,7 @@ img {
     .searchBar {
         display: none;
     }
-    .navbar-custom .center {
+    .navbar-custom .center #title{
         font-size: 45px;
     }
     .navbar-custom {
