@@ -43,7 +43,7 @@ export default function ProductSingleDisplay() {
                             </div>
                         </Carousel.Item>
                         {product.sideBanners?.map((item) => (
-                            <Carousel.Item>
+                            <Carousel.Item key={item}>
                                 <div className="left">
                                     <img src={`${item}`} alt="side-banners" />
                                 </div>

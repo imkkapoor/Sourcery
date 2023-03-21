@@ -107,12 +107,12 @@
   }.footer-container .left h2{
     font-size: 30px;
   }.footer-container .left p, .footer-container .right p{
-    font-size: 18px;
+    font-size: 13px;
   }.footer-container .center ul li{
-    font-size: 18px;
+    font-size: 13px;
   }.footer-container .center h2{
-    font-size: 25px;
+    font-size: 21px;
   }.footer-container .right h2{
-    font-size: 25px;
+    font-size: 21px;
   }
 }

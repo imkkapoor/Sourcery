@@ -73,7 +73,7 @@
         padding: 40px;
         padding-top: 0px;
         justify-content: space-around;
-        height:106vh;
+        height:112vh;
         
     }
     #first-product, #second-product{
@@ -84,14 +84,14 @@
         height: 25vh; 
     }
     #first-product{
-        top: 30vh;
+        top: 32vh;
        
         width: 75vw;
         
 
     }
     #second-product{
-        top: 80vh;
+        top: 85vh;
         width: 75vw;
     }
     .featured-text button{

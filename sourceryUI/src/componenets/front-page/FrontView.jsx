@@ -1,26 +1,36 @@
 import React from "react";
 import "./FrontView.css";
-import Nike from "./blue_travis.jpg";
+
 import { Link } from "react-router-dom";
 
 export default function FrontView() {
-  return (
-    <div className="front-view">
-      <div className="card-travis ">
-        <img id="slider" src={Nike} alt="steal-deal-poster" />
-        <div className="frontview-text">
-          <h2>STEAL OF THE MONTH</h2>
-          <h3>TRAVIS SCOTT X FRAGMENT X AJ1</h3>
-          <p>Marked with an array of La Flame and Fragment design details. Tumbled
-          white leather base accented by premium blue leather. Reversed black
-          leather midfoot Swooshes. Cactus Jack and fragment design logos
-          embossed on each heel. Shop this essential colour story now.
-          <br></br></p>
-          <Link to="product/64141287247df5b4c3cd0964" style={{ textDecoration: "none" }}>
-          <button className="steal-shop-now">SHOP NOW</button>
-          </Link>
+    return (
+        <div className="front-view">
+            <div className="card-travis ">
+                <div className="blank-space" />
+                <img
+                    id="slider"
+                    src="https://drive.google.com/uc?export=view&id=14n8uP4hKGJI4v5TOAoBnbsODcqqxBgkE"
+                    alt="steal-deal-poster"
+                />
+                <div className="frontview-text">
+                    <h2>STEAL OF THE MONTH</h2>
+                    <h3>AJ1 RETRO HIGH 85 BLACK & WHITE</h3>
+                    <p>
+                        Nike is bringing back the original 1985 Air Jordan 1
+                        silhouette.<br></br> Leather uppers are constructed throughout,
+                        while a black Nike Air logo sits on top of its white
+                        tongue. Shop this essential colour story now.
+                        <br></br>
+                    </p>
+                    <Link
+                        to="product/64190118f537c9a2056d9652"
+                        style={{ textDecoration: "none" }}
+                    >
+                        <button className="steal-shop-now">SHOP NOW</button>
+                    </Link>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 }

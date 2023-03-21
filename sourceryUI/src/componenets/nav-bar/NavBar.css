@@ -133,10 +133,11 @@ img {
         display: none;
     }
     .navbar-custom .center #title{
-        font-size: 45px;
+        font-size: 37px;
+        margin-bottom: 2px;
     }
     .navbar-custom {
-        height: 9vh;
+        height: 8vh;
     }
     .right-contents {
         display: none;
