@@ -1,4 +1,4 @@
-.sort-filter-category-header{
+.sort-filter-category-header {
     display: flex;
     align-items: center;
     padding: 7px 10px;
@@ -7,152 +7,168 @@
     top: 0;
     z-index: 100;
     background-color: black;
-    
 }
 
-.sort-filter-category-header .left{
+.sort-filter-category-header .left {
     flex: 1;
-    margin:0px 30px;
-    
+    margin: 0px 30px;
 }
 
-.sort-filter-category-header .left Button{
-    
+.sort-filter-category-header .left Button {
     background-color: black;
     outline: none;
     border: none;
     font-size: 16px;
 }
 
-.sort-filter-category-header .left Button:focus,.sort-filter-category-header .left Button:hover,.sort-filter-category-header .left Button:active{
+.sort-filter-category-header .left Button:focus,
+.sort-filter-category-header .left Button:hover,
+.sort-filter-category-header .left Button:active {
     outline: none;
     background-color: black;
 }
 
-.sort-filter-category-header .center{
+.sort-filter-category-header .center {
     flex: 2;
-    font-family: ProximaNova,sans-serif;
-    font-size:16px;
+    font-family: ProximaNova, sans-serif;
+    font-size: 16px;
     font-weight: normal;
     margin-top: 0;
 }
-.sort-filter-category-header .right{
+.sort-filter-category-header .right {
     flex: 1;
     display: flex;
     justify-content: flex-end;
     margin: 0px 30px;
     position: relative;
     color: white;
-    font-size:16px;
+    font-size: 16px;
 }
-.sort-filter-category-header .right h6{
+.sort-filter-category-header .right h6 {
     position: absolute;
     top: -0.7vh;
     margin-left: 10px;
-    font-size:9px;
+    font-size: 9px;
 }
 
-.sort-filter-category-header .right select{
+.sort-filter-category-header .right select {
     background-color: black;
     border: none;
     outline: none;
     color: white;
-    font-size:16px;
+    font-size: 16px;
     padding-top: 10px;
     width: 19vw;
     padding-left: 7px;
-    
 }
-.sort-filter-category-header .right select:focus{
+.sort-filter-category-header .right select:focus {
     background-color: black;
     border: none;
     outline: none;
 }
 
-.sort-filter-category-header .right option{
+.sort-filter-category-header .right option {
     font-size: 16px;
-    
 }
 
-.filter-menu-and-products-container{
+.filter-menu-and-products-container {
     display: flex;
     background-color: #fff;
-    padding:  10px 0px;
+    padding: 10px 0px;
     background-color: white;
 }
 
-.filter-container{
+.filter-container {
     position: -webkit-sticky;
     position: sticky;
     top: 48px;
 }
-.filter-menu-and-products-container .filter-container{
-   background-color: white;
+.filter-menu-and-products-container .filter-container {
+    background-color: white;
     padding: 0;
     height: 100%;
 }
 
-
-.filter-menu-and-products-container .filter-container ul{
+.filter-menu-and-products-container .filter-container ul {
     list-style: none;
-    
+
     padding: 0;
     margin: 0;
 }
 
-.filter-menu-and-products-container .filter-container ul li button{
+.filter-menu-and-products-container .filter-container ul li button {
     border: none;
     width: 100%;
     padding: 3px;
 }
 
-.filter-menu-and-products-container .filter-container ul li{
+.filter-menu-and-products-container .filter-container ul li {
     padding: 2px;
 }
 
-
-.filter-menu-and-products-container .filter-container ul li button:hover{
+.filter-menu-and-products-container .filter-container ul li button:hover {
     background-color: rgb(162, 162, 162);
 }
 
-.filter-menu-and-products-container .filter-container .card{
+.filter-menu-and-products-container .filter-container .card {
     border-radius: 0;
     border: none;
 }
 
-.filter-menu-and-products-container .filter-container .card .accordion-button, .filter-menu-and-products-container .filter-container .card .accordion-button:focus
-,.filter-menu-and-products-container .filter-container .card .accordion-button::after{
+.filter-menu-and-products-container .filter-container .card .accordion-button,
+.filter-menu-and-products-container
+    .filter-container
+    .card
+    .accordion-button:focus,
+.filter-menu-and-products-container
+    .filter-container
+    .card
+    .accordion-button::after {
     background-color: white;
     outline: none;
     color: #212529;
-
-
-} .filter-menu-and-products-container .filter-container .card{
+}
+.filter-menu-and-products-container .filter-container .card {
     width: 20vw;
 }
 
 .accordion-button:focus {
     box-shadow: none;
-    border-color: rgba(0,0,0,1);
+    border-color: rgba(0, 0, 0, 1);
 }
 
-
-
-@media only screen and (max-width: 1000px){
-    .filter-menu-and-products-container{
+@media only screen and (max-width: 1000px) {
+    .filter-menu-and-products-container {
         display: flex;
         flex-direction: column;
-    }.filter-menu-and-products-container .filter-container .card{
+    }
+    .filter-menu-and-products-container .filter-container .card {
         width: 100%;
-    }.filter-menu-and-products-container .filter-container {
+    }
+    .filter-menu-and-products-container .filter-container {
         position: -webkit-sticky;
-    position: sticky;
-    top: 8.9vh;
-    z-index: 100;
+        position: sticky;
+        top: 7vh;
+        z-index: 100;
+    }
+    .sort-filter-category-header .left button{
+        width: 100%;
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+    }
+    .sort-filter-category-header .left button svg{
+        font-size: medium;
+    }
+    .sort-filter-category-header .center, .sort-filter-category-header .right select{
+        font-size: 14px;
+    }.accordion-button{
+        font-size: 14px;
+        padding: 12px;
+    }.sort-filter-category-header{
+        padding-top: 17px;
     }
 }
-
-
 
 .loading {
     display: flex;
@@ -162,19 +178,22 @@
     width: 60px;
     height: 60px;
     animation: spin 1.8s linear infinite;
-  }
-  
-  @keyframes spin {
-    0%  { transform: rotate(0deg); }
-   100% { transform: rotate(360deg); }
-  }
+}
 
-  .loading-container{
-  
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-container {
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: 4.5vh;
 
     background-color: #fff;
-  }
+}

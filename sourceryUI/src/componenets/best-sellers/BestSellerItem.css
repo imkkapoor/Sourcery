@@ -50,3 +50,16 @@
     font-size: 2.1vh;
 
 }
+
+@media only screen and (max-width: 500px){
+    .best-seller-item-container .variant{
+        font-size: 14px;
+    }
+    .best-seller-item-container p{
+        font-size: 17px;
+    }
+    .best-seller-item-container h5{
+        margin-bottom: 2px;
+    }
+
+}

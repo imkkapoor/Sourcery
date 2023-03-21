@@ -45,16 +45,17 @@
 
 @media only screen and (max-width: 850px) {
     .shopping-page-banner-container .info h3{
-        font-size: 13px;
+        font-size: 15px;
+        margin-bottom: 4px;
        
     }
     .shopping-page-banner-container .info h6{
         font-size: 10px;
-       
+       margin-bottom: 6px;
 
     }
     .shopping-page-banner-container .info p{
-        font-size: 10px;
+        font-size: 11.5px;
      
     }
     .shopping-page-banner-container .info{

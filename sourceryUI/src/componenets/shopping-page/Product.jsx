@@ -35,11 +35,13 @@ export default function Product({ query, filters, sort }) {
                 )
             );
     }, [products, query, filters]);
+    console.log(sort);
 
     useEffect(() => {
-        if (sort === "best-seller") {
+        if (sort === "newest") {
+            
             setFilteredProducts((prev) =>
-                [...prev].sort((a, b) => a.createdAt - b.createdAt)
+                [...prev].sort((a, b) => new Date(`${b.createdAt}`) - new Date(`${a.createdAt}`))
             );
         } else if (sort === "asc") {
             setFilteredProducts((prev) =>

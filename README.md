@@ -12,7 +12,7 @@ A full-stack E-commerce website built on MERN stack and uses a variety of librar
 
 
 
-I'm just lacking a bit of middleware to work on. I am currently working on developing an admin pannel to ease the admin's/owner's daily tasks.
+I am currently working on developing an admin pannel to ease the admin's/owner's daily tasks.
 
 
 *sometimes the server might take a bit longer to respond(15sec max), your patience is appreciated!

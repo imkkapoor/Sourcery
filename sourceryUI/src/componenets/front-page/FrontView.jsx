@@ -18,7 +18,7 @@ export default function FrontView() {
                     <h3>AJ1 RETRO HIGH 85 BLACK & WHITE</h3>
                     <p>
                         Nike is bringing back the original 1985 Air Jordan 1
-                        silhouette.<br></br> Leather uppers are constructed throughout,
+                        silhouette. Leather uppers are constructed throughout,
                         while a black Nike Air logo sits on top of its white
                         tongue. Shop this essential colour story now.
                         <br></br>

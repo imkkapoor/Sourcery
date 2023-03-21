@@ -84,7 +84,7 @@ h2{
 @media only screen and (max-width: 800px){
     .frontview-text p {
         display: block;
-        font-size: 10px;
+        font-size: 12px;
         margin-bottom: 8px;
     }
     .frontview-text h2{
@@ -93,22 +93,22 @@ h2{
 
     }
     .frontview-text h3{
-        font-size: 11px;
+        font-size: 14px;
         margin-top: 0;
         margin-bottom: 4px;
     }
     .steal-shop-now{
-        font-size: 10px;
+        font-size: 14px;
         padding: 7px;
         margin-top: 0;
     }
     .front-view{
-        height: 75vh;
+        height: 77vh;
     }
     .frontview-text {
-        bottom: 7vh;
+        bottom: 5vh;
         left: 3vw;
-        width: 75vw;
+        width: 95vw;
     }
     .blank-space{
         display: none;
