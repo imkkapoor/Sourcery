@@ -5,6 +5,7 @@
     justify-content: flex-end;
     margin: 6vh 15.3vw;
     margin-bottom: 10vh;
+    transition: all 1s ease;
    
 }
 
@@ -12,6 +13,7 @@
     height: auto;
     width: 48vw;
     border-radius: 3px;
+   
    
 }
 

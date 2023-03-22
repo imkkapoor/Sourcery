@@ -2,7 +2,7 @@
     background-color: #fff;
     color: black;
     padding: 1%;
-    font-size: 4vh;
+    font-size: 3.2vh;
     text-align: center;
 }
 
@@ -157,12 +157,15 @@
     margin-right: 0;
 }
 
+.cart-container-rest .right .summary b{
+    font-size: 2.5vh;
+}
 
 
 .cart-container-rest .right img{
     
-    height : 12vh;
-    width: 73.63vh;
+    height: auto;
+    width: 75%;
    
 } 
 
@@ -240,7 +243,7 @@
     }
     .cart-container-rest #remove-product{
         border: none;
-        /* background-color: rgb(184, 184, 184); */
+        
         border-radius: 4px;
         font-size: 13px;
     }

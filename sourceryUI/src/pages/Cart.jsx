@@ -117,10 +117,10 @@ export default function Cart() {
                             <b>TOTAL</b>
                         </div>
                         <div className="right">
-                            {cart.total} <br></br>
-                            {cart.total === 0 ? 0 : 25}
+                            ${cart.total} <br></br>
+                            ${cart.total === 0 ? 0 : 25}
                             <br></br>
-                            <b>{cart.total === 0 ? 0 : cart.total + 25}</b>
+                            <b>${cart.total === 0 ? 0 : cart.total + 25}</b>
                         </div>
                     </div>
                     <StripeCheckout
