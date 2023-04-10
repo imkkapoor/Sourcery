@@ -7,6 +7,7 @@ import BestSellers from "../componenets/best-sellers/BestSellers";
 import Newsletter from "../componenets/news-letter/Newsletter";
 import Footer from "../componenets/footer/Footer";
 import CategoryBar from "../componenets/category-bar/CategoryBar";
+import Accessories from "../componenets/accessories/Accessories";
 
 export default function Home() {
     return (
@@ -24,6 +25,7 @@ export default function Home() {
                     link: "EXPLORE ALL BEST SELLERS",
                 }}
             />
+            <Accessories />
             <BestSellers
                 cat="apparel"
                 type={{ categories: "best-seller" }}

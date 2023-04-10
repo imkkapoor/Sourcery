@@ -68,11 +68,14 @@ export default function Cart() {
             <div className="cart-container-rest">
                 <div className="left">
                     {cart.products.map((product, index) => (
-                        <Link style = {{textDecoration:"none"}}to={`/product/${product._id}`}>
+                        
                         <div className="product-card" key={index}>
+                            <Link style = {{textDecoration:"none"}}to={`/product/${product._id}`}>
                             <img src={product.image} alt="product"></img>
+                            </Link>
                             <div className="info">
                                 <div className="left">
+                                    <Link style = {{textDecoration:"none"}}to={`/product/${product._id}`}>
                                     <h5>{product.company}</h5>
                                     <h3>{product.title}</h3>
                                     <p id="variant">{product.variant}</p>
@@ -80,6 +83,7 @@ export default function Cart() {
                                         ${product.price}
                                     </p>
                                     <p id="size">Size: {product.size}</p>
+                                    </Link>
                                     <button
                                         onClick={() => {
                                             dispacth(removeProduct(product));
@@ -104,7 +108,7 @@ export default function Cart() {
                                 </div>
                             </div>
                         </div>
-                        </Link>
+                        
                     ))}
                 </div>
 

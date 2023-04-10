@@ -1,0 +1,84 @@
+.accessories-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-content: space-around;
+    margin: 4vh 8vw;
+    position: relative;
+}
+
+.accessories-container #accessory-banner {
+    width: 55vw;
+    height: 60vh;
+    object-fit: cover;
+    margin: 20px;
+    border-radius: 4px;
+}
+
+.accessories-container .text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    left: 52vw;
+    right: 4vw;
+    color: black;
+    background-color: white;
+    font-size: 2.22vh;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.accessories-container .text h2 {
+    font-size: 3.2vh;
+    font-weight: bold;
+    color: black;
+}
+
+.accessories-container .text button {
+    border: none;
+    border-radius: 2px;
+    color: white;
+    background-color: #282829;
+    display: block;
+    margin: 1vh;
+    padding: 1vh;
+}
+
+@media only screen and (max-width: 720px) {
+    .accessories-container #accessory-banner {
+        width: 100%;
+        height: 60vh;
+    }
+    .accessories-container {
+        flex-direction: column;
+    }
+    .accessories-container .text {
+        position: relative;
+        left: auto;
+        right: auto;
+        width: 90%;
+        margin-top: -8vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .accessories-container #accessory-banner {
+        width: 100%;
+        height: 41vh;
+    }
+    .accessories-container .text {
+        font-size: 12px;
+    }
+    .accessories-container .text h2 {
+        font-size: 16px;
+    }
+    .accessories-container .text a {
+        font-size: 14px;
+    }
+
+    .accessories-container .text button {
+        margin-left: 0;
+    }
+}
