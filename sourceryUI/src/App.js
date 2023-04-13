@@ -13,24 +13,31 @@ import {
 } from "react-router-dom";
 
 import { useSelector } from "react-redux";
+import ScrollToTop from "./componenets/scroll-behaviour/ScrollToTop";
 
 function App() {
     const user = useSelector((state) => state.user.currentUser);
     return (
         <Router>
+            <ScrollToTop />
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route path="/products/:category" element={<ProductPage />} />
                 <Route path="/product/:id" element={<ProductSingleDisplay />} />
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/success" element={<Success />} />
-                <Route path="/login" element={user? <Navigate to="/"/>:<Login /> } />
+                <Route
+                    path="/login"
+                    element={user ? <Navigate to="/" /> : <Login />}
+                />
                 {/* <Route path="/login" element={<Login />}/> */}
-                <Route path="/register" element={user? <Navigate to="/"/>:<Register />}/>
+                <Route
+                    path="/register"
+                    element={user ? <Navigate to="/" /> : <Register />}
+                />
                 {/* <Route path="/register" element={<Register />}/> */}
             </Routes>
         </Router>
-        
     );
 }
 
