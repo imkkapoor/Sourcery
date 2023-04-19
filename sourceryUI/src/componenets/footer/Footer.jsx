@@ -36,7 +36,11 @@ export default function Footer() {
                     <li>
                         <Link
                             to="/"
-                            style={{ color: "inherit", textDecoration: "none" }}
+                            style={{
+                                color: "inherit",
+                                textDecoration: "none",
+                                fontSize: "inherit",
+                            }}
                         >
                             Home
                         </Link>
@@ -44,7 +48,11 @@ export default function Footer() {
                     <li>
                         <Link
                             to="/cart"
-                            style={{ color: "inherit", textDecoration: "none" }}
+                            style={{
+                                color: "inherit",
+                                textDecoration: "none",
+                                fontSize: "inherit",
+                            }}
                         >
                             Cart
                         </Link>
@@ -52,7 +60,11 @@ export default function Footer() {
                     <li>
                         <Link
                             to="/products/type=shoes"
-                            style={{ color: "inherit", textDecoration: "none" }}
+                            style={{
+                                color: "inherit",
+                                textDecoration: "none",
+                                fontSize: "inherit",
+                            }}
                         >
                             Sneakers
                         </Link>
@@ -61,7 +73,11 @@ export default function Footer() {
                     <li>
                         <Link
                             to="/products/category=women"
-                            style={{ color: "inherit", textDecoration: "none" }}
+                            style={{
+                                color: "inherit",
+                                textDecoration: "none",
+                                fontSize: "inherit",
+                            }}
                         >
                             Women's
                         </Link>
@@ -70,7 +86,11 @@ export default function Footer() {
                     <li>
                         <Link
                             to="/products/type=apparel"
-                            style={{ color: "inherit", textDecoration: "none" }}
+                            style={{
+                                color: "inherit",
+                                textDecoration: "none",
+                                fontSize: "inherit",
+                            }}
                         >
                             Apparel
                         </Link>
@@ -79,7 +99,11 @@ export default function Footer() {
                     <li>
                         <Link
                             to="/products/type=accessories"
-                            style={{ color: "inherit", textDecoration: "none" }}
+                            style={{
+                                color: "inherit",
+                                textDecoration: "none",
+                                fontSize: "inherit",
+                            }}
                         >
                             Accessories
                         </Link>
