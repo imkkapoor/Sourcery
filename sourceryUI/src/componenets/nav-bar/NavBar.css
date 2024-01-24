@@ -171,3 +171,10 @@ img {
     }
 }
 
+
+@media only screen and (max-width: 1440px) {
+
+    .right-contents:nth-child(1),.right-contents:nth-child(2),.right-contents:nth-child(3){
+        display: none;
+    }
+}
