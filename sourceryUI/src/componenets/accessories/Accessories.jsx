@@ -7,7 +7,7 @@ export default function Accessories() {
         <div className="accessories-container">
             <img
                 id="accessory-banner"
-                src="https://drive.google.com/uc?export=view&id=10eJHmRMWn9mzbAvkqpfa2yhoOxVl1Pbk"
+                src="https://www.dropbox.com/scl/fi/dl4h66ql93vfspvg6j4dp/d039011a6acc337fa76533ff998c9146.jpg?rlkey=68g7d9zo2eg2z4tjtad2p4xuj&raw=1"
                 alt="ad-banner"
             />
             <div className="text">

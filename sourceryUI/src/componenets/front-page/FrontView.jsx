@@ -10,7 +10,7 @@ export default function FrontView() {
                 <div className="blank-space" />
                 <img
                     id="slider"
-                    src="https://drive.google.com/uc?export=view&id=14n8uP4hKGJI4v5TOAoBnbsODcqqxBgkE"
+                    src="https://www.dropbox.com/scl/fi/tj3fnrqug4qt8zfchilxt/cover-1.jpg?rlkey=zevtvt3qxyrblu00tgt9gymv4&raw=1"
                     alt="steal-deal-poster"
                 />
                 <div className="frontview-text">
